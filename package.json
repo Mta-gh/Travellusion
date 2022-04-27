@@ -1,0 +1,24 @@
+{
+  "name": "discovery",
+  "version": "1.0.0",
+  "description": "blahblah",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MG",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.6.0",
+    "sass": "^1.47.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

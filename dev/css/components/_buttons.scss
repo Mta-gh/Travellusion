@@ -1,0 +1,39 @@
+.btn {
+    background-color: $yellow;
+    padding: 13px 23px ;
+    color: $white;
+    text-transform: uppercase;
+    font-size: .7rem;
+    transition: all $transition;
+    &:hover {
+        background-color: $black-txt;
+        color: $white;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 1.1em 2em;
+    }
+}
+
+.btn2 {
+    background-color: #f9f9ff;
+    color: $black-txt;
+    padding: 10px 20px ;
+    border: 1px solid $light-border;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $yellow;
+        color: $white;
+        border-color: #eeeeee00;
+    }
+}
+
+.btn3 {
+    background-color: $black-txt;
+    &:hover {
+        background-color: $yellow;
+        color: $white;
+    }
+}
+

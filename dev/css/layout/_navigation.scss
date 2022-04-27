@@ -1,0 +1,146 @@
+.head-nav {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    position: relative;
+    .top-nav, .main-nav {
+        display: flex;
+        align-items: center;
+    }
+    .top-nav {
+        justify-content: space-between;
+        padding: 10px 5px;
+        a {
+            font-weight: 300;
+        }
+    }
+    .left-nav a {
+        margin-right: 20px;
+    }
+    .right-nav a {
+        margin-left: 10px;
+    }
+    .main-nav {
+        background-color: rgba($color: $white, $alpha: .2);
+        padding: 15px;
+        a {
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+        a:nth-of-type(1) {
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+}
+
+.elBurgerito {
+    display: none;
+    width: 30px;
+    height: 40px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-left: 30px;
+    cursor: pointer;
+    .burger-line {
+        background: $white;
+        width: 30px;
+        height: 2px;
+        margin: 3px 0;
+        border-radius: 2px;
+        transition: all $transition;
+    }
+    .burger-line:nth-of-type(2) {
+        opacity: 1;
+        transition: opacity .2s ease-out;
+        
+    }
+}
+
+// menu popup mobile
+.burger-popup{
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    background-color: #000000;
+    left: -100%;
+    transition:all 0.5s ease-in-out;
+    z-index: 222;
+    .burger-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 4em 2em;
+        gap: 2em;
+    }
+    a {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+}
+
+.active {
+    left: 0;
+    transition:all $transition;
+    .burger-line {
+        position: fixed;
+        width: 30px;
+    }
+    .burger-line:nth-of-type(1) {
+        transform: rotate(45deg);
+    }
+    .burger-line:nth-of-type(3) {
+        transform: rotate(-45deg);
+    }
+    .burger-line:nth-of-type(2) {
+        opacity: 0;
+        z-index: -50;
+    }
+}
+
+// Overlay 
+.overloff {
+    position: fixed;
+    transition:all $transition;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+}
+
+.overlon {
+    background: #000000;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: all $transition;
+}
+
+
+// Responsive 
+@media screen and (max-width: 768px) {
+    .elBurgerito {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    // Sticky
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        background-color: #000000;
+        transition: all $transition;
+        padding: 1% 2%;
+        .main-nav {
+            background-color: rgba($color: $white, $alpha: 0);
+            transition: all $transition;
+            
+        }
+    }
+}
+

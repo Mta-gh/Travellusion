@@ -1,0 +1,90 @@
+body {
+    font-family: $font-family;
+    color: $black-txt;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    @media screen and (max-width: 1140px) {
+        width: 95%;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+
+// concernant le txt
+
+h1, h2, h3,h4 {
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+h1 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 .5rem;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 1.5em;
+    span {
+        font-weight: 300;
+    }
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: $black-txt;
+    &:hover {
+        color: $yellow;
+        transition: all $transition;
+    }
+}
+
+a:hover {
+    color: $yellow;
+    transition: all $transition;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5em;
+    color: $foot-txt;
+}
+
+// concernant les forms/inputs
+button {
+    border: 0;
+}
+input, textarea {
+    background-color: rgba($color: white, $alpha: 0);
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    font-weight: 300;
+    padding: .7em;
+}
+
+// Responsive 
+@media screen and (max-width: 768px) {
+    // body {
+    //     font-size: 18px;
+    // }
+}
