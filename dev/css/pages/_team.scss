@@ -1,0 +1,105 @@
+.team {
+    .header {
+        background: rgb(49,193,151);
+        background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+    }
+    // Grid pour layout des boites
+    .team-blocs {
+        display: grid;
+        margin: 0 auto;
+        width: 75%;
+        gap: 2em;
+        padding-bottom: 6em;
+    }
+    .article-team{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+        transition: box-shadow $transition;
+        &:hover {
+            box-shadow: 0 3px 30px rgba($color: #000000, $alpha: .25);
+        }
+        h3 {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: .3em;
+        }
+    }
+    // Les boites de chaque hotel
+    .team-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .team-extract {
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $light-border;
+        margin-bottom: 0;
+        padding: .8em 0;
+    }
+    .team-txt {
+        padding: 2em;
+    }
+    .team-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: rgb(49,193,151);
+      background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+    }
+    
+
+    .btn{
+        color: $black-txt;
+        &:hover {
+            color: $white;
+        }
+    }
+    .btn3 {
+        color: $white
+    }
+    
+    
+    
+    // Responsive 
+    @media screen and (max-width: 1170px) {
+        .wrapper {
+            width: 85%;
+        }
+        img {
+            width: 100%;
+        }
+        .hotels-blocs {
+            display: flex;
+            flex-direction: column;
+        }
+        .article-packages {
+            width: 100%;
+        }
+        .sect-request {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title-sect {
+                width: 90%;
+                max-width: 90%;
+                align-items: center;
+                gap: 2em;
+                padding: 0;
+            }
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .wrapper {
+            width: 95%;
+        }
+    }
+}
+
+
