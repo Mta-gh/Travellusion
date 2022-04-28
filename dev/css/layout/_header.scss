@@ -19,6 +19,7 @@
     }
     // Le titre
     .head-txt {
+        position: absolute;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -26,7 +27,7 @@
         justify-content: center;
         z-index: 4;
         flex-grow: 1;
-        margin-top: -50px;
+        margin-top: 250px;
         @media screen and (max-width: 768px) {
             width: 100%;
             h1 {
