@@ -283,6 +283,7 @@
 
 
 ///////////// Test
+.home{
 @keyframes starfieldRotate {
   from {
     transform: rotate(0deg);
@@ -364,4 +365,5 @@ p{
   color:white;
   top: 0;
   position: absolute
+}
 }
