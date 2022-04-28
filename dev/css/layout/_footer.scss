@@ -36,13 +36,7 @@
         flex-direction: column;
         width: 50%;
     }
-    // insta
-    .foot-gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: calc(10px + .2em);
-    }
+    
     .foot-inputs {
         display: flex; 
         button {
@@ -91,3 +85,10 @@
         }
     }
 }
+// insta
+    .foot-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: calc(10px + .2em);
+    }
