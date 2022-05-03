@@ -1,6 +1,7 @@
 .contact {
     .header {
-        background-image: url(../img/hero-contact.jpg);
+        background: rgb(49,193,151);
+        background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
     }
     .wrapper {
         display: flex;
@@ -8,12 +9,7 @@
         iframe {
             margin: 8em 0;
         }
-        .contact-info-form {
-            display: flex;
-            width: 100%;
-            gap: 6em;
-            padding-bottom: 4em;
-        }
+        
         .contact-form {
             flex-grow: 1;
             display: grid;
@@ -26,7 +22,7 @@
             ". btn"
             ;
             gap: 2em;
-            margin-bottom: 4rem;
+            margin: 4rem;
             textarea {
                 grid-area: mess;
             }
@@ -38,6 +34,9 @@
         }
     }
     .contact-info {
+        width: 30%;
+        margin: 0 auto;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -52,8 +51,8 @@
         p {
             margin-bottom: 0;
         }
-        .fa-solid {
-            color: $yellow;
+        i {
+            color: $blue;
             font-size: 2.5em;
             margin-right: 30px;
         }
@@ -76,3 +75,4 @@
         align-self: flex-end;
     }
 }
+

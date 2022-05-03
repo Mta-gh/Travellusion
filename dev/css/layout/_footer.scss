@@ -10,7 +10,7 @@
     }
     a {
         &:hover {
-            color: $yellow;
+            color: $blue;
             transition: all $transition;
         }
     }
@@ -36,13 +36,7 @@
         flex-direction: column;
         width: 50%;
     }
-    // insta
-    .foot-gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: calc(10px + .2em);
-    }
+    
     .foot-inputs {
         display: flex; 
         button {
@@ -64,7 +58,7 @@
         padding-top: 1.5em;
         border-top: 1px solid $foot-txt;
         a, .fa-heart {
-            color: $yellow;
+            color: $blue;
         }
     }
     .foot-socials {
@@ -91,3 +85,10 @@
         }
     }
 }
+// insta
+    .foot-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: calc(10px + .2em);
+    }
