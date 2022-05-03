@@ -47,8 +47,9 @@
       justify-content: center;
       align-items: center;
         border-radius: 0 200px 0 200px;
-      background: rgb(49,193,151);
-      background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+      background: url(../img/alien1.webp)top;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .article-team:nth-of-type(2){
         .team-img{
