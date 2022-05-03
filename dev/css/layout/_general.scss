@@ -2,11 +2,12 @@ body {
     font-family: $font-family;
     color: $black-txt;
     font-size: 14px;
-    
+    background: rgb(227,227,227);
+    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(234,238,238,1) 75%, rgba(79,224,243,1) 100%);
 }
 
 .wrapper {
-    max-width: 1140px;
+    max-width: 1190px;
     margin: 0 auto;
     @media screen and (max-width: 1140px) {
         width: 95%;
@@ -22,13 +23,13 @@ img {
 
 h1, h2, h3,h4 {
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
 }
 
 
 h1 {
     font-size: 4.5em;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     margin: 1rem 0 .5rem;
@@ -53,20 +54,20 @@ a {
     text-decoration: none;
     color: $black-txt;
     &:hover {
-        color: $yellow;
+        color: $blue;
         transition: all $transition;
     }
 }
 
 a:hover {
-    color: $yellow;
+    color: $blue;
     transition: all $transition;
 }
 
 p {
     font-weight: 300;
     line-height: 1.5em;
-    color: $foot-txt;
+    color: #000;
 }
 
 // concernant les forms/inputs
@@ -86,6 +87,6 @@ input, textarea {
 // Responsive 
 @media screen and (max-width: 768px) {
     // body {
-    //     font-size: 18px;
-    // }
-}
+        //     font-size: 18px;
+        // }
+    }
