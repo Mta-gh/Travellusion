@@ -1,3 +1,4 @@
+
 .head-nav {
     display: flex;
     flex-direction: column;
@@ -143,4 +144,69 @@
         }
     }
 }
+
+
+//Cursor test//
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #1b1b1b;
+    cursor: none;
+    overflow: hidden;
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border: 1px dotted white;
+    border-radius: 50%;
+    position: absolute;
+    background:url(../img/blblo.jpg)bottom;
+    animation: Anim1 1s infinite alternate;
+    pointer-events: none;
+    z-index: 4;
+    opacity:.8;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 20px;
+}
+
+.expand {
+    animation: Anim2 .6s;
+    background: rgba(0, 0, 0, 0);
+    
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(260deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+
+
+
 
