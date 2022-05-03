@@ -39,14 +39,15 @@
     }
     .team-img{
       margin: 0 auto;
-      width: 400px;
-      height: 400px;
+      width: 450px;
+      height: 450px;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      background: rgb(49,193,151);
-      background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+      border-radius: 0px 200px 0 200px;
+background: url(../img/alien1.webp)top;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .team-proposal{
     margin: 5% auto;
