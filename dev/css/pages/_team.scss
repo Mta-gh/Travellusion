@@ -1,17 +1,20 @@
-.hotel {
+.team {
     .header {
-        background-image: url(../img/hero-hotels.jpg);
+        background: rgb(49,193,151);
+        background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
     }
     // Grid pour layout des boites
-    .hotels-blocs {
+    .team-blocs {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        width: 75%;
         gap: 2em;
         padding-bottom: 6em;
     }
-    .article-packages {
-        padding: 0;
-        width: max-content;
+    .article-team{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
         transition: box-shadow $transition;
         &:hover {
             box-shadow: 0 3px 30px rgba($color: #000000, $alpha: .25);
@@ -21,39 +24,33 @@
             margin-bottom: 0;
             padding-bottom: .3em;
         }
-        .map-review {
-            padding-bottom: .8em;
-            a {
-                color: $foot-txt;
-                font-weight: 300;
-                &:hover {
-                    color: $yellow;
-                }
-            }
-            
-        }
     }
     // Les boites de chaque hotel
-    .package-top {
+    .team-top {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
-    .package-prices {
+    .team-extract {
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid $light-border;
         margin-bottom: 0;
         padding: .8em 0;
     }
-    .package-txt {
+    .team-txt {
         padding: 2em;
     }
-    .package-per-night {
-        border-bottom: 0;
+    .team-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: rgb(49,193,151);
+      background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
     }
-    .sect-request {
-        background-color: $white;
-    }
+    
+
     .btn{
         color: $black-txt;
         &:hover {
