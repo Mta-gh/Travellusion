@@ -1,3 +1,4 @@
+
 .head-nav {
     display: flex;
     flex-direction: column;
@@ -143,4 +144,67 @@
         }
     }
 }
+
+
+//Cursor test//
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #1b1b1b;
+    cursor: none;
+    overflow: hidden;
+}
+
+.cursor {
+    width: 60px;
+    height: 60px;
+    border: 1px dotted white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+  pointer-events: none;
+  z-index: 22;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: rgb(20, 203, 220);
+    border-radius: 0 10px 4px 6px;
+}
+
+.expand {
+    animation: Anim2 .5s;
+    background: rgba(84, 231, 226, 0.39);
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(300deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+
+
+
 
