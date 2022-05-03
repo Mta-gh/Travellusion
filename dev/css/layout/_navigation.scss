@@ -157,14 +157,16 @@ body {
 }
 
 .cursor {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: 1px dotted white;
     border-radius: 50%;
     position: absolute;
+    background:url(../img/blblo.jpg)bottom;
     animation: Anim1 1s infinite alternate;
-  pointer-events: none;
-  z-index: 22;
+    pointer-events: none;
+    z-index: 4;
+    opacity:.8;
 }
 
 .cursor::before {
@@ -173,22 +175,22 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 5px;
-    height: 5px;
-    background: rgb(20, 203, 220);
-    border-radius: 0 10px 4px 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 20px;
 }
 
 .expand {
-    animation: Anim2 .5s;
-    background: rgba(84, 231, 226, 0.39);
+    animation: Anim2 .6s;
+    background: rgba(0, 0, 0, 0);
+    
 }
 @keyframes Anim1 {
     from {
         transform: scale(1) rotate(0deg);
     }
     to {
-        transform: scale(0.7) rotate(300deg);
+        transform: scale(0.7) rotate(260deg);
     }
 }
 
@@ -197,7 +199,7 @@ body {
         transform: scale(1);
     }
     50%{
-        transform: scale(2);
+        transform: scale(3);
     }
     100%{
         transform: scale(1);
