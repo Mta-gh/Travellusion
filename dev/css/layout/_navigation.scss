@@ -1,9 +1,13 @@
 
 .head-nav {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     z-index: 5;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
+    backdrop-filter: blur(5px);
     .top-nav, .main-nav {
         display: flex;
         align-items: center;
@@ -162,11 +166,11 @@
     border: 1px dotted white;
     border-radius: 50%;
     position: absolute;
-    background: url(../img/blblo.jpg) bottom;
+    background: url(../img/saturn.png)center/cover;
     animation: Anim1 1s infinite alternate;
     pointer-events: none;
     z-index: 4;
-    opacity:.8;
+    opacity:1;
 }
 
 .cursor::before {
@@ -181,16 +185,16 @@
 }
 
 .expand {
-    animation: Anim2 .6s;
+    animation: Anim2 1s;
     background: rgba(0, 0, 0, 0);
     
 }
 @keyframes Anim1 {
     from {
-        transform: scale(1) rotate(0deg);
+        transform: scale(0.7) rotate(0deg);
     }
     to {
-        transform: scale(0.7) rotate(260deg);
+        transform: scale(1.2) rotate(260deg);
     }
 }
 
