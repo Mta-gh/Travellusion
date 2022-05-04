@@ -1,20 +1,3 @@
-.sect {
-    padding: 4em 0;
-    display: grid;
-    gap: 2em;
-    
-}
-
-// Pour les sections 1, 2 et 6 parce que y'a des similarités quand même
-.sect-3blocs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px);
-    gap: 2em;
-    .title-sect {
-        grid-column: span 3;
-    }
-}
 
 .title-sect {
     display: flex;
@@ -361,5 +344,9 @@
   animation-duration: 36s;
 }
 
-
+p{
+  color:white;
+  top: 0;
+  position: absolute
+}
 }
