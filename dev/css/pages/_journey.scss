@@ -136,7 +136,10 @@
 }
 
 .journey-swiper {
-    padding-top: 8em;
+    margin-top: 8em;
     width: 100%;
-    
+    box-shadow: 0 0 15px rgb(0 0 0 / 60%);
+    img {
+        display: block;
+    }
 }
