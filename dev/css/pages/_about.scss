@@ -1,5 +1,5 @@
-
 .about {
+    text-align: justify;
 
     .header {
         background: linear-gradient(0deg, rgba(49, 193, 151, 1) 28%, rgba(215, 113, 192, 1) 92%);
@@ -11,11 +11,8 @@
         padding: 20px;
     }
 
-    .img-container {
-        max-width: 600px;
-        height: 100px;
-        background: rgb(49, 193, 151);
-        border-radius: 50%;
+    .sect-txt {
+        width: 25%;
     }
 
     .sect-offer {
@@ -27,20 +24,54 @@
             display: flex;
             justify-content: center;
             gap: 80px;
+            height: fit-content;
             align-items: center;
-
             margin: 0 0 50px;
 
             .txt-about {
-                width: 50%;
+                width: 60%;
+                align-self: flex-end;
+                text-align: justify;
             }
 
-            .img-container {
-                width: 200px;
-                height: 200px;
+            .img-container-about {
+                width: 40%;
+                height: 300px;
+                position: relative;
+
+                .img-about {
+                    position: absolute;
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                }
+
+                .img-about:nth-of-type(1) {
+                    top: 1%;
+                    left: 29%;
+                    width: 140px;
+                    height: 140px;
+                    background: url(../img/planete-cercle-bleu.jpg) center/cover;
+                }
+
+                .img-about:nth-of-type(2) {
+                    top: 35%;
+                    left: 2%;
+                    width: 180px;
+                    height: 180px;
+                    background: url(../img/depositphotos_7689364-stock-photo-ringed-planet.jpg) center/cover;
+                }
+
+                .img-about:nth-of-type(3) {
+                    top: 40%;
+                    left: 46%;
+                    width: 120px;
+                    height: 120px;
+                    background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+                }
             }
+
         }
     }
+
 
     .bloc-members {
         display: flex;
@@ -48,19 +79,48 @@
         gap: 50px;
         align-items: center;
         margin: 50px 0;
+
         .team-member {
-            width: 30%;
-            h3{
-                text-align: center;
+            width: 22%;
+            text-align: left;
+
+
+            .img-container {
+                max-width: 230px;
+                height: 330px;
+                margin-bottom: 50px;
+                border-top-left-radius: 50% 30%;
+                border-bottom-right-radius: 50% 30%;
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                transition: all ease-in-out .3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
-        }
-        .img-container {
-            max-width: 600px;
-            height: 200px;
-            background: rgb(49, 193, 151);
-            border-radius: 50%;
+
+            &:nth-of-type(1) {
+                .img-container {
+                    background: url(../img/e.t) center/cover;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .img-container {
+                    background: url(../img/yoda.jpg) center/cover;
+                }
+            }
+
+            &:nth-of-type(3) {
+                .img-container {
+                    background: url(../img/Infos-et-Actu5807affb05f73.jpg) center/cover;
+                }
+            }
+
         }
     }
+
+
 
     // Responsive 
     @media screen and (max-width: 1170px) {
@@ -104,6 +164,38 @@
     @media screen and (max-width: 767px) {
         .wrapper {
             width: 95%;
+        }
+
+        .sect-offer {
+            .offer-article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0;
+
+                .txt-about {
+                    width: 100%;
+                }
+
+                .img-container-about {
+                    width: 100%;
+
+                    .img-about:nth-of-type(1) {
+                        top: 0%;
+                        left: 40%;
+                    }
+
+                    .img-about:nth-of-type(2) {
+                        top: 35%;
+                        left: 21%;
+                    }
+
+                    .img-about:nth-of-type(3) {
+                        top: 39%;
+                        left: 53%;
+                    }
+                }
+            }
         }
     }
 }
