@@ -1,14 +1,14 @@
 .single-team {
     .header {
-      height: 30vh;
+    height: 30vh;
     }
 
     .article-team{
-      margin: 5% auto;
-      width: 60%;
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      gap: 2em;
+    margin: 5% auto;
+    width: 60%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
         transition: box-shadow $transition;
         h3 {
             border-bottom: 0;

@@ -9,9 +9,9 @@
     }
     .article-team{
     padding: 2rem 1rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
         transition: box-shadow $transition;
         &:hover {
             box-shadow: 0 3px 30px rgba($color: #000000, $alpha: .25);
