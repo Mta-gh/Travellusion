@@ -1,6 +1,95 @@
-.img-journey { 
-    background-color: aquamarine;
-    width: 200px;
-    height: 100px;
+.section-title {
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 6em;
 }
 
+.section-hotels-blocs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 45px;
+    padding-bottom: 8em;
+    a:hover{
+        color: $black-txt
+        
+    }
+}
+
+.box-25 {
+    border: 1px solid $black-txt;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow : 0 0 3px rgba(0, 0, 0, 0.8),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
+    padding: 2.5em;
+
+}
+
+.article-journeys {
+    background-color: $grey;
+    transition: $transition;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        box-shadow : 0 0 15px rgba(0, 0, 0, 0.6),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
+    }
+    h3{
+        margin: 0;
+        text-align: center;
+    }
+    img {
+        padding: 2em 0;
+    }
+    .journey-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .journey-details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        p {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+        }
+        p:nth-of-type(2) {
+            color: aquamarine;
+        }
+    }
+    
+    .btn {
+        margin-top: 3em;
+    }
+    .stars {
+        margin-bottom: 2em;
+    }
+}
+
+
+.info-lines {
+    width: 100%;
+    height: 1px;
+    background-color: $black-txt;
+    box-shadow : 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+// Single journey
+.single-journey {
+    .section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2em;
+        h3, h2 {
+            margin-bottom: 0;
+        }
+    }
+    
+    
+}
+
+.section-journey-single {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
