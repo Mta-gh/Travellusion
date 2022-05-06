@@ -1,0 +1,24 @@
+// Team box
+.box-200-left, .box-200-right {
+    border: 1px solid $black-txt;
+    box-shadow : 0 0 3px rgba(0, 0, 0, 0.8),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
+    
+}
+
+.box-200-right {
+    border-radius: 0 100px;
+}
+
+.box-200-left {
+    border-radius: 100px 0;
+}
+
+// Journey box
+.box-25 {
+    border: 1px solid $black-txt;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow : 0 0 3px rgba(0, 0, 0, 0.8),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
+    padding: 2.5em;
+    background-color: $grey;
+    
+}
