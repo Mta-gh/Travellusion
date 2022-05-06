@@ -1,5 +1,4 @@
 .header {
-    height: 100vh;
     color: $white;
     position: relative;
     
@@ -44,23 +43,9 @@ a:hover {
     transition: all $transition;
 }
 
-.home .header {
-    background: linear-gradient(359deg, #7fffd4, #d1d1d1);
-    background-size: 400% 400%;
 
-    -webkit-animation: AnimatedGradient 17s ease infinite;
-    -moz-animation: AnimatedGradient 17s ease infinite;
-    animation: AnimatedGradient 17s ease infinite;
-    .head-txt{
-        position: absolute;
-        margin-top: 250px;
-    }
-
-}
 
 // Pour les autres pages
-
-
 
 .contact, .blog, .hotel {
     background-color: rgb(250, 250, 255);

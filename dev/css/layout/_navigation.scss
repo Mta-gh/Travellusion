@@ -98,24 +98,24 @@
     }
 }
 
-// Overlay 
-.overloff {
-    position: fixed;
-    transition:all $transition;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    z-index: -1;
-}
+// // Overlay 
+// .overloff {
+//     position: fixed;
+//     transition:all $transition;
+//     width: 100vw;
+//     height: 100vh;
+//     opacity: 0;
+//     z-index: -1;
+// }
 
-.overlon {
-    background: #000000;
-    opacity: .5;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    transition: all $transition;
-}
+// .overlon {
+//     background: #000000;
+//     opacity: .5;
+//     top: 0;
+//     left: 0;
+//     z-index: 5;
+//     transition: all $transition;
+// }
 
 
 // Responsive 
