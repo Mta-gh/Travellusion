@@ -1,8 +1,8 @@
 .header {
-    background: rgb(49,193,151);
-    background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+    // background: rgb(49,193,151);
+    // background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
     height: 100vh;
-    color: $white;
+    color: #000;
     position: relative;
     
     .wrapper {
@@ -11,7 +11,7 @@
         height: 100%;
     }
     a, p {
-        color: white;
+        color: #000;
         
     }
     span {

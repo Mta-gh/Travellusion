@@ -1,11 +1,13 @@
 .footer {
-    background-color: $footerback;
+    
     h4 {
-        color: $white;
+        color: #000000;
         text-transform: uppercase;
+        margin-top: 0;
+
     }
     p, a {
-        color: $foot-txt;
+        color: #000000;
         font-weight: 300;
     }
     a {
@@ -17,8 +19,11 @@
     .top-foot {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1em;
-    }
+        gap: 3em;
+        padding: 3em;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #00000017, -1px -1px 2px #ffffff63, 1px 1px 2px #5555556b;
+        backdrop-filter: blur(5px);    }
     // navigation
     .foot-bloc:nth-of-type(2) {
         display: grid;
