@@ -1,8 +1,4 @@
 .team {
-    .header {
-        background: rgb(49,193,151);
-        background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
-    }
     // Grid pour layout des boites
     .team-blocs {
         display: grid;
@@ -13,9 +9,9 @@
     }
     .article-team{
     padding: 2rem 1rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
         transition: box-shadow $transition;
         &:hover {
             box-shadow: 0 3px 30px rgba($color: #000000, $alpha: .25);
