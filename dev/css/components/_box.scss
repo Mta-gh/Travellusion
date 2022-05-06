@@ -2,11 +2,15 @@
 .box-200-left, .box-200-right {
     border: 1px solid $black-txt;
     box-shadow : 0 0 3px rgba(0, 0, 0, 0.8),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
-    
+    transition: box-shadow .3s ease-in-out;
+    &:hover {
+        box-shadow : 0 0 15px rgba(0, 0, 0, 0.6),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
+    }
 }
 
 .box-200-right {
     border-radius: 0 100px;
+    
 }
 
 .box-200-left {
@@ -20,5 +24,9 @@
     box-shadow : 0 0 3px rgba(0, 0, 0, 0.8),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
     padding: 2.5em;
     background-color: $grey;
-    
+    transition: box-shadow .3s ease-in-out;
+
+    &:hover {
+        box-shadow : 0 0 15px rgba(0, 0, 0, 0.6),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
+    }
 }

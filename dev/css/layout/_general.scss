@@ -23,7 +23,7 @@ img {
 
 // concernant le txt
 
-h1, h2, h3,h4 {
+h1, h2, h3, h4 {
     letter-spacing: 1px;
     font-weight: 700;
     font-family: 'Syne', sans-serif;
@@ -47,7 +47,7 @@ h3 {
     font-size: 1.5em;
     text-shadow : 0 0 2px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
-
+    margin-top: 0;
     span {
         font-weight: 300;
     }
@@ -55,6 +55,10 @@ h3 {
 
 h4 {
     font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
 }
 
 a {

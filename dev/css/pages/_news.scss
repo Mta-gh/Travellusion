@@ -23,7 +23,7 @@
 
     .news-article {
         text-align: center;
-        border-bottom: 1px solid $light-border;
+        border-bottom: 1px solid $black-txt;
         padding: 3em;
     }
 
@@ -46,7 +46,7 @@
 .news-right {
     padding: 0 3em 3em;
     margin-left: 2em;
-    border: 1px solid $light-border;
+    // border: 1px solid $light-border;
     height: fit-content;
 
     h3 {
@@ -124,7 +124,7 @@
 
     // 2nd Part
     .categories {
-        border-bottom: 3px dotted $light-border;
+        border-bottom: 1px dotted $black-txt;
 
         p {
             transition: color $transition;
@@ -136,9 +136,9 @@
     }
 }
 
-.news-categories:nth-of-type(2) {
-    border-top: 1px solid $light-border;
-}
+// .news-categories:nth-of-type(2) {
+//     border-top: 1px solid $black-txt;
+// }
 
 // Responsive
 // Intermediate
