@@ -1,4 +1,6 @@
 .footer {
+    -webkit-mask-image: -webkit-gradient(linear, right 50%, right top, from(black), to(rgba(0, 0, 0, 0)));
+    background: $holographic;
     
     h4 {
         color: #000000;

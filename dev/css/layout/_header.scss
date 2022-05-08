@@ -1,6 +1,6 @@
 .header {
-    // background: rgb(49,193,151);
-    // background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+    -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+    background: $holographic;
     height: 100vh;
     color: #000;
     position: relative;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .home .header {
-    background: linear-gradient(359deg, #7fffd4, #d1d1d1);
+    background: linear-gradient(359deg, #3c39df91, #d1d1d1);
     background-size: 400% 400%;
 
     -webkit-animation: AnimatedGradient 17s ease infinite;
