@@ -207,62 +207,6 @@
     }
 }
 
-// Responsive 
-@media screen and (max-width: 768px) {
-    // General
-    .sect-3blocs {
-        display: flex;
-        flex-direction: column;
-    }
-    img {
-        width: 100%;
-    }
-    // Section 1
-    .sect-popular .img-bloc{
-        height: 400px;
-    }
-    // Section 2
-    .sect-prices {
-        height: auto;
-    }
-    // Section 3
-    .sect-issues {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    // Section 4
-    .sect-testify {
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-        .testify-bloc:nth-of-type(2) {
-            display: none;
-        }
-    }
-    // Section 5
-    .sect-request {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .title-sect {
-            width: 90%;
-            max-width: 90%;
-            align-items: center;
-            gap: 2em;
-            padding: 0;
-            p {
-                padding-bottom: 0;
-            }
-        }
-        img {
-            width: 100%;
-            max-width: 100%;
-        }
-        
-    }
-}
 
 
 ///////////// Test
