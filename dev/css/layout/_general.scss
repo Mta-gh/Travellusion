@@ -3,7 +3,7 @@ body {
     color: $black-txt;
     font-size: 14px;
     background: rgb(227,227,227);
-    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(234,238,238,1) 75%, rgba(79,224,243,1) 100%);
+    // background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(234,238,238,1) 75%, rgba(79,224,243,1) 100%);
     cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
 
 }
@@ -23,7 +23,7 @@ img {
 
 // concernant le txt
 
-h1, h2, h3,h4 {
+h1, h2, h3, h4 {
     letter-spacing: 1px;
     font-weight: 700;
     font-family: 'Syne', sans-serif;
@@ -47,7 +47,7 @@ h3 {
     font-size: 1.5em;
     text-shadow : 0 0 2px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
-
+    margin-top: 0;
     span {
         font-weight: 300;
     }
@@ -55,6 +55,10 @@ h3 {
 
 h4 {
     font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
 }
 
 a {

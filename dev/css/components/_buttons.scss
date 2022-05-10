@@ -19,25 +19,6 @@
 }
 
 .btn2 {
-    background-color: #f9f9ff;
-    color: $black-txt;
-    padding: 10px 20px ;
-    border: 1px solid $light-border;
-    font-weight: 500;
-    font-size: 1em;
-    text-transform: uppercase;
-    &:hover {
-        background-color: $blue;
-        color: $white;
-        border-color: #eeeeee00;
-    }
-}
-
-.btn3 {
-    background-color: $black-txt;
-    &:hover {
-        background-color: $blue;
-        color: $white;
-    }
+    border-radius: 0;
 }
 
