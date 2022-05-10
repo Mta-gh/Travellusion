@@ -1,0 +1,181 @@
+.news {
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 60px;
+
+        @media screen and (max-width: 1170px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .img-container {
+        border-radius: 50%;
+        background: rgb(49, 193, 151);
+    }
+}
+
+// Main content
+.news-content {
+    padding: 0 3em;
+
+    .news-article {
+        text-align: center;
+        border-bottom: 1px solid $light-border;
+        padding: 3em;
+    }
+
+    .img-container-news {
+        max-width: 600px;
+        height: 200px;
+        margin: 50px auto;
+        border-top-left-radius: 550px 550px;
+        border-top-right-radius: 200% 100%;
+        border-bottom-right-radius: 150% 200%;
+        border-bottom-left-radius: 30% 50px;
+        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+        box-shadow: rgb(143, 143, 143) 0px 13px 17px -5px, rgb(0, 0, 0) 0px 10px 16px -8px;
+    }
+}
+
+
+
+// Side Bar
+.news-right {
+    padding: 0 3em 3em;
+    margin-left: 2em;
+    border: 1px solid $light-border;
+    height: fit-content;
+
+    h3 {
+        margin: 0;
+    }
+
+
+    .btn {
+        text-align: center;
+        text-transform: capitalize;
+        margin: 3em 0 2em;
+        background: rgb(49, 193, 151);
+    }
+}
+
+
+
+
+// 1st Part
+.news-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 3em;
+
+
+    .popular-links {
+        position: relative;
+        
+        &::before {
+            content: '';
+            width: 80px;
+            height: 50px;
+
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+
+        h4,
+        p {
+            padding-left: 90px;
+        }
+
+        h4 {
+            font-size: .9em;
+            margin: 10px 0 0 0;
+        }
+
+        p {
+            font-size: .8em;
+            margin: 5px 0 10px;
+        }
+    }
+
+    .popular-links:nth-of-type(2)::before {
+        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+        
+    }
+
+    .popular-links:nth-of-type(3)::before {
+        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+    }
+
+    .popular-links:nth-of-type(4)::before {
+        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+    }
+
+    .popular-links:nth-of-type(5)::before {
+        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+    }
+
+    // 2nd Part
+    .categories {
+        border-bottom: 3px dotted $light-border;
+
+        p {
+            transition: color $transition;
+        }
+
+        &:hover p {
+            color: $blue;
+        }
+    }
+}
+
+.news-categories:nth-of-type(2) {
+    border-top: 1px solid $light-border;
+}
+
+// Responsive
+// Intermediate
+@media screen and (max-width: 1170px) {
+    .news-content img {
+        width: 100%;
+    }
+
+    .news-right {
+        margin-left: 0;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 768px) {
+
+    // Tout flexer
+    .article-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        .categories {
+            grid-column: span 2;
+        }
+
+        .categories {
+            justify-content: flex-start;
+        }
+    }
+
+    .news-right img {
+        width: auto;
+    }
+}
