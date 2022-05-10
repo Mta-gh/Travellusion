@@ -1,14 +1,13 @@
 .single-team {
     .header {
-    height: 30vh;
+        height: 30vh;
     }
-
+    
     .article-team{
-    margin: 5% auto;
-    width: 60%;
-    display: grid;
-    // grid-template-rows: repeat(2, 1fr);
-    gap: 6em;
+        margin: 5% auto;
+        width: 60%;
+        display: grid;
+        gap: 6em;
         transition: box-shadow $transition;
         h3 {
             border-bottom: 0;
@@ -25,9 +24,7 @@
     .team-extract {
         justify-content: space-between;
         align-items: center;
-        // border-bottom: 1px solid $light-border;
         margin-bottom: 0;
-        // padding: .8em 0;
         padding-bottom: 2em;
     }
     .team-txt {
@@ -35,45 +32,43 @@
         
     }
     .team-img{
-      margin: 0 auto;
-      width: 450px;
-      height: 450px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-background: url(../img/alien1.webp) top;
-      background-size: cover;
-      background-repeat: no-repeat;
-    border: 1px solid $black-txt;
-
-    box-shadow : 0 0 3px rgba(0, 0, 0, 0.8),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
-
+        margin: 0 auto;
+        width: 450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: url(../img/alien1.webp) top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        box-shadow : 0 0 15px rgba(0, 0, 0, 0.3),inset 0 0 6px rgba(0, 0, 0, 0.3) ;
+        
     }
     .team-proposal{
-    margin: 5% auto;
-    width: 60%;
-      }
-        .travel-link-team{
-      margin: 5% auto;
-
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2em;
+        margin: 5% auto;
+        width: 60%;
+    }
+    .travel-link-team{
+        margin: 5% auto;
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
         transition: box-shadow $transition;
-      }
-
-    .travel-link{
-      margin: 0 auto;
-      justify-content: center;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: url(../../img/green-mars.png) center/cover;
-    //   background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
     }
     
-
+    .travel-link{
+        margin: 0 auto;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: url(../../img/green-mars.png) center/cover;
+    }
+    
+    
     
     
     

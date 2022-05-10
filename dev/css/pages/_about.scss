@@ -85,9 +85,12 @@
                 max-width: 230px;
                 height: 330px;
                 margin-bottom: 50px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+
                 border-top-left-radius: 50% 30%;
                 border-bottom-right-radius: 50% 30%;
-                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
                 transition: all ease-in-out .3s;
 
                 &:hover {

@@ -52,7 +52,8 @@
         font-weight: 700;
     }
     p:nth-of-type(2) {
-        color: aquamarine;
+        color: $black-txt;
+        text-shadow: 0 0 2px aquamarine;
     }
 }
 

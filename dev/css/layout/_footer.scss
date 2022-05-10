@@ -1,7 +1,12 @@
 .footer {
-    -webkit-mask-image: -webkit-gradient(linear, right 50%, right top, from(black), to(rgba(0, 0, 0, 0)));
-    background: $holographic;
-    padding: 150px 0 50px;
+        -webkit-mask-image: -webkit-gradient(linear, right 40%, right top, from(black), to(rgba(0, 0, 0, 0)));
+        background: $holographic;
+        padding: 150px 0 50px;
+        z-index: -1;
+    @media screen and (max-width: 768px) {
+        -webkit-mask-image: -webkit-gradient(linear, right 13%, right top, from(black), to(rgba(0, 0, 0, 0)));
+
+    }
     h4 {
         color: #000000;
         text-transform: uppercase;

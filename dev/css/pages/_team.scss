@@ -8,15 +8,12 @@
         padding-bottom: 6em;
     }
     .article-team{
-    // padding: 2rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-    overflow: hidden;
-        transition: box-shadow $transition;
-        &:hover {
-            box-shadow : 0 0 15px rgba(0, 0, 0, 0.6),inset 0 0 3px rgba(0, 0, 0, 0.8) ;
-        }
+        // padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        overflow: hidden;
+        
         h3 {
             border-bottom: 0;
             margin-bottom: 0;
@@ -41,26 +38,22 @@
         padding: 2em 2em 2em 4em;
     }
     .team-img{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        // border-radius: 0 200px 0 200px;
-      background: url(../img/alien1.webp) top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/alien1.webp) top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
     }
     .article-team:nth-of-type(2){
-        .team-img{
-        // border-radius: 200px 0 200px 0;
-    }
         .team-txt{
             order: 2;
         }
-
+        
     } 
     
-
+    
     .btn{
         color: $black-txt;
         &:hover {
