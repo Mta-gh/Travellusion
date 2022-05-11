@@ -1,0 +1,111 @@
+.team {
+    // Grid pour layout des boites
+    .team-blocs {
+        display: grid;
+        margin: 0 auto;
+        width: 75%;
+        gap: 45px;
+        padding-bottom: 6em;
+    }
+    .article-team{
+        // padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        overflow: hidden;
+        
+        h3 {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: .3em;
+        }
+    }
+    // Les boites de chaque hotel
+    .team-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .team-extract {
+        justify-content: space-between;
+        align-items: center;
+        // border-bottom: 1px solid $light-border;
+        margin-bottom: 0;
+        // padding: .8em 0;
+        padding-bottom: 1em;
+    }
+    .team-txt {
+        padding: 2em 2em 2em 4em;
+    }
+    .team-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/alien1.webp) top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    .article-team:nth-of-type(2){
+        .team-txt{
+            order: 2;
+        }
+        
+    } 
+    
+    
+    .btn{
+        color: $black-txt;
+        &:hover {
+            color: $white;
+        }
+    }
+    .btn3 {
+        color: $white
+    }
+    
+    
+    
+    // Responsive 
+    @media screen and (max-width: 1170px) {
+        .wrapper {
+            width: 85%;
+        }
+        img {
+            width: 100%;
+        }
+        .hotels-blocs {
+            display: flex;
+            flex-direction: column;
+        }
+        .article-packages {
+            width: 100%;
+        }
+        .sect-request {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title-sect {
+                width: 90%;
+                max-width: 90%;
+                align-items: center;
+                gap: 2em;
+                padding: 0;
+            }
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .wrapper {
+            width: 95%;
+        }
+    }
+    
+}
+
+
+
+

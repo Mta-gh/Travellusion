@@ -1,26 +1,17 @@
 .header {
-    background-image: url(../img/hero-bg.jpg);
-    background-size: cover;
-    background-position: center;
+    -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    background: $holographic;
     height: 100vh;
-    color: $white;
+    color: #000;
     position: relative;
-    &::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: .4;
-        position: absolute;
-        z-index: 0;
-    }
+    
     .wrapper {
         display: flex;
         flex-direction: column;
         height: 100%;
     }
     a, p {
-        color: white;
+        color: #000;
         
     }
     span {
@@ -51,14 +42,29 @@
 }
 
 a:hover {
-    color: $yellow;
+    color: $blue;
     transition: all $transition;
+}
+
+.home .header {
+    background: linear-gradient(359deg, #3c39df91, #d1d1d1);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimatedGradient 17s ease infinite;
+    -moz-animation: AnimatedGradient 17s ease infinite;
+    animation: AnimatedGradient 17s ease infinite;
+    .head-txt {
+        margin-top: 250px;
+        position: absolute;
+    }
+
+
 }
 
 // Pour les autres pages
 
-.contact, .blog, .hotel {
-    background-color: rgb(250, 250, 255);
+.contact, .team, .news, .journeys, .about {
+    background-color: #e3e3e3;
     .header {
         height: 35vh;
         @media screen and (max-width: 768px) {
@@ -79,4 +85,22 @@ a:hover {
         gap: 10px;
         font-weight: 300;
     }
+}
+
+
+
+@-webkit-keyframes AnimatedGradient {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimatedGradient {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimatedGradient {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }

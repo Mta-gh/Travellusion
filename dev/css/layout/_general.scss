@@ -2,10 +2,14 @@ body {
     font-family: $font-family;
     color: $black-txt;
     font-size: 14px;
+    background: rgb(227,227,227);
+    // background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(234,238,238,1) 75%, rgba(79,224,243,1) 100%);
+    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+
 }
 
 .wrapper {
-    max-width: 1140px;
+    max-width: 1190px;
     margin: 0 auto;
     @media screen and (max-width: 1140px) {
         width: 95%;
@@ -19,15 +23,17 @@ img {
 
 // concernant le txt
 
-h1, h2, h3,h4 {
+h1, h2, h3, h4 {
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    text-shadow : 0 0 3px rgba(0, 0, 0, 0.8);
+    color: #000;
 }
 
 
 h1 {
     font-size: 4.5em;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     margin: 1rem 0 .5rem;
@@ -39,6 +45,9 @@ h2 {
 }
 h3 {
     font-size: 1.5em;
+    text-shadow : 0 0 2px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+    margin-top: 0;
     span {
         font-weight: 300;
     }
@@ -48,24 +57,28 @@ h4 {
     font-size: 1.2em;
 }
 
+h5 {
+    font-size: 1em;
+}
+
 a {
     text-decoration: none;
     color: $black-txt;
     &:hover {
-        color: $yellow;
+        color: $blue;
         transition: all $transition;
     }
 }
 
 a:hover {
-    color: $yellow;
+    color: $blue;
     transition: all $transition;
 }
 
 p {
     font-weight: 300;
     line-height: 1.5em;
-    color: $foot-txt;
+    color: #000;
 }
 
 // concernant les forms/inputs
@@ -82,9 +95,28 @@ input, textarea {
     padding: .7em;
 }
 
+
+// les étoiles
+.fa-star {
+    color: aquamarine;
+    text-shadow : 0 0 2px #4FE0F3;
+}
+
+.star-grey {
+    color: $foot-txt;
+    text-shadow : 0 0 2px $foot-txt ;
+}
+
 // Responsive 
 @media screen and (max-width: 768px) {
     // body {
-    //     font-size: 18px;
-    // }
-}
+        //     font-size: 18px;
+        // }
+    }
+
+
+
+    ///test///
+    a{
+        cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFZJREFUeNqdzksKwDAIAFHH+x+6lIYOVPOhs5OHJnES/5UkYKEkU7xjijSIm50iFh4fAXgYDd/yumVVRSwsqq/nRA3xVK0oo06d5U6DpQZ7PV7lMxH7LkaQAbYFwryzAAAAAElFTkSuQmCC),auto;
+    }

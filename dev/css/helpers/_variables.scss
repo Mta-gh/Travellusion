@@ -10,8 +10,40 @@ $footerback: #04091e;
 // color txt footer
 $foot-txt: rgb(102, 101, 101);
 // font family
-$font-family : 'Poppins', sans-serif;
+$font-family : 'DM Sans', sans-serif;
 // transition 
 $transition: .3s ease-in-out;
 // Light Border 
 $light-border: #eeeeee;
+
+
+
+
+// bleu aqua 
+$blue : #01FFF0;
+// Gris
+$grey : rgba(227,227,227,1);
+
+$transparent: rgba(255, 255, 255, 0); //fix for safari gradients
+$color1: #92f2f2; //blue
+$color2: #d6cff1; //magenta
+$color3: #c4f2e5; //turquoise
+$color4: #a8d0f0; //dark-blue
+$color5: #c2dcf2; //blue-tint
+$color6: #eed5f2; //pink
+$color7: #9cb9fc; //darker-blue
+
+$shine: radial-gradient(at 0% 50%, $color1, $color2, $transparent 50%),
+  radial-gradient(at 100% 50%, $color1, $color2, $transparent 30%),
+  linear-gradient(90deg, $transparent 20%, $color1 40%, $transparent 70%
+  );
+
+$holographic: radial-gradient(at 30% -5%, $color1, $color2, $transparent 25%),
+  // radial-gradient(at 30% 40%, $color4, $transparent 20%),
+  radial-gradient(at 50% 70%, $color3, $transparent 30%),
+  radial-gradient(at 70% 0%, $color2, $transparent 20%),
+  linear-gradient(75deg, $color1 5%, $transparent, $color4, $transparent, $color6, $transparent, $color2, $transparent, $color3 90%),
+  radial-gradient(at 30% 50%, $color1, $transparent 30%),
+  radial-gradient(at 30% 50%, $color7, $transparent 30%),
+  radial-gradient(at 100% 50%, $color1, $color5, $transparent 50%),
+  linear-gradient(115deg, $color1 5%, $color4 10%, $color2, $color6 20%, $color4, $color4 30%, $color2, $color5 40%, $color1, $color4 70%);

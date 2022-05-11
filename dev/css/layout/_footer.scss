@@ -1,24 +1,36 @@
 .footer {
-    background-color: $footerback;
+        -webkit-mask-image: -webkit-gradient(linear, right 40%, right top, from(black), to(rgba(0, 0, 0, 0)));
+        background: $holographic;
+        padding: 150px 0 50px;
+        z-index: -1;
+    @media screen and (max-width: 768px) {
+        -webkit-mask-image: -webkit-gradient(linear, right 13%, right top, from(black), to(rgba(0, 0, 0, 0)));
+
+    }
     h4 {
-        color: $white;
+        color: #000000;
         text-transform: uppercase;
+        margin-top: 0;
+
     }
     p, a {
-        color: $foot-txt;
+        color: #000000;
         font-weight: 300;
     }
     a {
         &:hover {
-            color: $yellow;
+            color: $blue;
             transition: all $transition;
         }
     }
     .top-foot {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1em;
-    }
+        gap: 3em;
+        padding: 3em;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #00000017, -1px -1px 2px #ffffff63, 1px 1px 2px #5555556b;
+        backdrop-filter: blur(5px);    }
     // navigation
     .foot-bloc:nth-of-type(2) {
         display: grid;
@@ -36,13 +48,7 @@
         flex-direction: column;
         width: 50%;
     }
-    // insta
-    .foot-gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: calc(10px + .2em);
-    }
+    
     .foot-inputs {
         display: flex; 
         button {
@@ -64,7 +70,7 @@
         padding-top: 1.5em;
         border-top: 1px solid $foot-txt;
         a, .fa-heart {
-            color: $yellow;
+            color: $blue;
         }
     }
     .foot-socials {
@@ -91,3 +97,10 @@
         }
     }
 }
+// insta
+    .foot-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: calc(10px + .2em);
+    }
