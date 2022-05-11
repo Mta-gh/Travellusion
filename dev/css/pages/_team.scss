@@ -46,6 +46,7 @@
         background: url(../img/alien1.webp)top;
         background-size: cover;
         background-repeat: no-repeat;
+        @media screen and (max-width:990px){display: none;}
     }
     .article-team:nth-of-type(2){
         .team-img{
@@ -58,64 +59,52 @@
     } 
     
     
-    .btn{
-        color: $black-txt;
-        &:hover {
-            color: $white;
-        }
-    }
-    .btn3 {
-        color: $white
-    }
-    
-    
-    
-    .team { 
-        @media screen and (max-width:990px){
+}
+
+
+.team { 
+    @media screen and (max-width:990px){
+        .article-team{
+            justify-content: center;
+            display: flex;
+            gap: 0;
+            color: white;
+            box-shadow: 0 3px 30px rgb(0 0 0 / 25%);
+            border-radius: 200px 0;
+            opacity: .8;
+            -webkit-box-shadow: inset 5px 1px 45px 37px rgba(184,198,203,0.64); 
+            box-shadow: inset 5px 1px 45px 37px rgba(184,198,203,0.64);
             
-            .article-team{
-                position: relative;
-                justify-content: center;
-                display: flex;
-                gap: 0;
+            &:nth-of-type(1){
+                background: url(../img/alien1.webp)top;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &:nth-of-type(2){
+                background: url(../img/preda.jpg)top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 0 200px;
+            }
+            &:nth-of-type(3){
+                background: url(../img/yoda.jpg)top;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+            
+            .team-top{
+                align-items: center;
                 color: white;
-                box-shadow: 0 3px 30px rgb(0 0 0 / 25%);
-                border-radius: 20px 0;
-                opacity: .8;
-                -webkit-box-shadow: inset 5px 1px 45px 37px rgba(184,198,203,0.64); 
-                box-shadow: inset 5px 1px 45px 37px rgba(184,198,203,0.64);
-                
-                &:nth-of-type(1){
-                    background: url(../img/alien1.webp)top;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                &:nth-of-type(2){
-                    background: url(../img/preda.jpg)top;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                &:nth-of-type(3){
-                    background: url(../img/yoda.jpg)top;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                .team-top{
-                    position: relative;
-                    z-index: 4;
-                    align-items: center;
+                h3{
                     color: white;
-                    h3{
-                        color: white;
-                    }
                 }
-                
-                .team-extract{
-                    display: none;
-                }
+            }
+            
+            .team-extract{
+                display: none;
             }
         }
     }
-    
 }
+
