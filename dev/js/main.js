@@ -28,36 +28,42 @@ let hidePoint = 300
 
 document.addEventListener('scroll', () => {
     let top = document.documentElement.scrollTop;
-        if (theTop < top) {
-            headNav.classList.remove('sticky');
-        } 
-        // Point à partir du moment duquel la nav se remet a sa place de départ
-        else if (top < hidePoint) {
-            headNav.classList.remove('sticky');
-        }
-        else {
-            headNav.classList.add('sticky');
-        }
+    if (theTop < top) {
+        headNav.classList.remove('sticky');
+    } 
+    // Point à partir du moment duquel la nav se remet a sa place de départ
+    else if (top < hidePoint) {
+        headNav.classList.remove('sticky');
+    }
+    else {
+        headNav.classList.add('sticky');
+    }
     theTop = top;
 }
 );
 
+//////////////////Cursor TEST//
+document.onmousemove = function (e) {
+    document.body.style.setProperty('--x', e.pageX + 'px');
+    document.body.style.setProperty('--y', e.pageY + 'px');
+};
 
-//Cursor test//
+let links = document.querySelectorAll('a');
 
-const cursor = document.querySelector('.cursor');
+let cursorito = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', (e) => {
-	cursor.setAttribute(
-		'style',
-		'top:' + (e.pageY - 20 ) + 'px; left:' + (e.pageX - 20 ) + 'px;'
-	);
+links.forEach(link => {
+    link.addEventListener('mouseenter', e => {
+        cursorito.classList.add('enlarged')
+    })
+    link.addEventListener('mouseout', e => {
+        cursorito.classList.remove('enlarged')
+    })
 });
 
-document.addEventListener('click', () => {
-	cursor.classList.add('expand');
-
-	setTimeout(() => {
-		cursor.classList.remove('expand');
-	}, 500);
+document.addEventListener('mousemove', (e) => {
+	cursorito.setAttribute(
+		'style',
+		'top: ' + e.pageY + 'px; left: ' + e.pageX + 'px;'
+	);
 });
