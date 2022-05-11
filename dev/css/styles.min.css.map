@@ -15,7 +15,7 @@
         "pages/_home.scss",
         "pages/_contact.scss",
         "pages/_blog.scss",
-        "pages/_hotels.scss",
+        
         "pages/_news.scss",
         "pages/_single-news.scss"
     ],
