@@ -1,8 +1,13 @@
+
 .head-nav {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     z-index: 5;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000017, -1px -1px 2px #ffffff63, 1px 1px 2px #5555556b;
+    backdrop-filter: blur(5px);
     .top-nav, .main-nav {
         display: flex;
         align-items: center;
@@ -21,11 +26,11 @@
         margin-left: 10px;
     }
     .main-nav {
-        background-color: rgba($color: $white, $alpha: .2);
         padding: 15px;
         a {
             text-transform: uppercase;
             margin-left: 20px;
+            
         }
         a:nth-of-type(1) {
             margin-right: auto;
@@ -74,7 +79,7 @@
         gap: 2em;
     }
     a {
-        color: $white;
+        color: #000000;
         text-transform: uppercase;
         font-size: 1.2em;
     }
@@ -143,4 +148,69 @@
         }
     }
 }
+
+
+//Cursor test//
+// body {
+//     // margin: 0;
+//     // padding: 0;
+//     // height: 100vh;
+//     // background: #1b1b1b;
+//     // cursor: none;
+
+// }
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border: 1px dotted white;
+    border-radius: 50%;
+    position: absolute;
+    background: url(../img/saturn.png) center/cover;
+    animation: Anim1 1s infinite alternate;
+    pointer-events: none;
+    z-index: 4;
+    opacity:1;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 20px;
+}
+
+.expand {
+    animation: Anim2 1s;
+    background: rgba(0, 0, 0, 0);
+    
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(0.7) rotate(0deg);
+    }
+    to {
+        transform: scale(1.2) rotate(260deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+
+
+
 

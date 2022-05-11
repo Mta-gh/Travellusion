@@ -248,7 +248,7 @@ input, textarea {
 }
 
 #search-bar {
-    background-color: $yellow;
+    background-color: $blue;
     border: 0;
     border-radius: 25px;
     width: 100%;
@@ -329,7 +329,7 @@ input, textarea {
             transition: color $transition;
         }
         &:hover p {
-            color: $yellow;
+            color: $blue;
         }
     }
 }
@@ -380,7 +380,7 @@ input, textarea {
     background-color: $white;
     text-transform: capitalize;
     &:hover {
-        background-color: $yellow;
+        background-color: $blue;
     }
 }
 
