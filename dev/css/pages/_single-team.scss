@@ -15,12 +15,20 @@
             margin-bottom: 0;
             padding-bottom: .3em;
         }
+        @media screen and (max-width: 990px) {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+        }
     }
     // Les boites de chaque team
     .team-top {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media screen and (max-width: 990px) {
+            text-align: center;
+        }
     }
     .team-extract {
         justify-content: space-between;
@@ -30,10 +38,16 @@
         padding: .8em 0;
     }
     .team-txt {
-        padding: 2em;
+        padding: 3rem;
         &:hover {
             box-shadow: 0 3px 30px rgba($color: #000000, $alpha: .25);
         }
+        @media screen and (max-width: 990px) {
+            p{
+            font-size: smaller;
+        }
+        }
+        
     }
     .team-img{
         margin: 0 auto;
@@ -46,18 +60,30 @@
         background: url(../img/alien1.webp)top;
         background-size: cover;
         background-repeat: no-repeat;
+        @media screen and (max-width: 990px) {
+        width: 250px;
+        height: 250px;
+        border-radius: 0px 150px 0 150px;
+    }
     }
     .team-proposal{
         margin: 5% auto;
         width: 60%;
+        @media screen and (max-width: 990px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
     }
     .travel-link-team{
         margin: 5% auto;
-        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;
         transition: box-shadow $transition;
+        @media screen and (max-width: 990px) {
+            display: flex;
+            gap: 3rem;
+        flex-direction: column;}
     }
     
     .travel-link{
@@ -68,6 +94,10 @@
         border-radius: 50%;
         background: rgb(49,193,151);
         background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+        @media screen and (max-width: 990px) {
+        width: 8rem;
+        height: 8rem;
+    }
     }
     
     
@@ -75,42 +105,14 @@
     
     
     // Responsive 
-    @media screen and (max-width: 1170px) {
-        .wrapper {
-            width: 85%;
-        }
-        img {
-            width: 100%;
-        }
-        .hotels-blocs {
+    @media screen and (max-width: 990px) {
+        .travel-link-team{
             display: flex;
-            flex-direction: column;
-        }
-        .article-packages {
-            width: 100%;
-        }
-        .sect-request {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .title-sect {
-                width: 90%;
-                max-width: 90%;
-                align-items: center;
-                gap: 2em;
-                padding: 0;
-            }
-            img {
-                width: 100%;
-                max-width: 100%;
-            }
+            justify-content: center;
         }
     }
-    @media screen and (max-width: 767px) {
-        .wrapper {
-            width: 95%;
-        }
-    }
+
+    
 }
 
 
