@@ -63,8 +63,7 @@
                 <h3>Andromeda Galaxy</h3>
             </div>
             <!-- L'image de la planète 🌍 -->
-            <div class="img-container img-container-single">
-                <img src="img/green-mars.png" alt="kosten-planet">
+            <div class="img-container img-container-single planet-container">
             </div>
             <!--1 Première section 🏅-->
             <section class="journey-description">
@@ -188,5 +187,57 @@
         </div>
     </footer>
     <script src="js/main.min.js"></script>
+    <script src="js/three.js"></script>
+    
+    
+    <script type="module">
+        
+        // import { OrbitControls } from "./OrbitControls.js";
+        import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
+        
+        const bgColour = {
+            color: '#000000'
+        };
+        
+        let container = document.querySelector('.planet-container');
+        let containerHeight = container.offsetHeight;
+        let containerwidth = container.clientWidth;
+        console.log(containerwidth)
+        
+        console.log(container)
+        const scene = new THREE.Scene({ alpha: true }); // add aplha :true to allow alpha
+        const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
+        
+        const texture = new THREE.TextureLoader().load( 'img/mars2.jpg' );
+        
+        
+        const renderer = new THREE.WebGLRenderer();
+        // set background as transparent
+        renderer.setClearColor(0xffffff, 0);
+        
+        renderer.setSize( containerwidth, containerHeight );
+        container.appendChild( renderer.domElement );
+        
+        const geometry = new THREE.SphereGeometry(1, 64, 64);
+        const material = new THREE.MeshBasicMaterial( { map: texture } );
+        
+        const sphere = new THREE.Mesh( geometry, material );
+        scene.add( sphere );
+        
+        // enable controls
+        const controls = new OrbitControls( camera, renderer.domElement );
+        // disable zoom 
+        controls.enableZoom = false;
+        camera.position.z = 5;
+        
+        function animate() {
+            requestAnimationFrame( animate );
+            sphere.rotation.y += 0.005;
+            renderer.render( scene, camera );
+        }
+        animate();
+        
+        
+    </script>
 </body>
 </html>
