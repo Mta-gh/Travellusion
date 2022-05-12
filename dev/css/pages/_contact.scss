@@ -7,6 +7,7 @@
         }
         
         .contact-form {
+            padding: 3rem;
             flex-grow: 1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -26,6 +27,21 @@
                 grid-area: btn;
                 width: max-content;
                 justify-self: end;
+            }
+
+            input, textarea{
+                box-shadow: 1px 1px 2px #5555552a, -1px -1px 4px #ffffff8c, 5px 5px 10px #49494917;
+                backdrop-filter: blur(5px);
+                border-radius: 20px 0;
+                cursor: cell;
+            }
+            input::placeholder, textarea::placeholder{
+                color: $color7;
+                opacity: .7;
+            }
+            input:focus, textarea:focus{
+                outline: none !important;
+
             }
         }
     }
