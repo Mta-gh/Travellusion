@@ -4,197 +4,185 @@
 
     // Les boites de chaque hotel
     .title-sect {
+
         padding: 20px;
     }
 
     .sect-txt {
-        width: 25%;
-    }
+        width: 70%;
+        margin-bottom: 50px;
+        display: flex;
+        gap: 5%;
 
-    .sect-offer {
-        h2 {
-            text-align: center;
+        .title-sect {
+            width: 90%;
+            padding: 20px;
         }
 
-        .offer-article {
-            display: flex;
-            justify-content: center;
-            gap: 80px;
-            height: fit-content;
-            align-items: center;
-            margin: 0 0 50px;
+        .img-container-about {
+            width: 50%;
+            height: 300px;
+            position: relative;
 
-            .txt-about {
-                width: 60%;
-                align-self: flex-end;
-                text-align: justify;
+            .img-about {
+                position: absolute;
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             }
 
-            .img-container-about {
-                width: 40%;
-                height: 300px;
-                position: relative;
-
-                .img-about {
-                    position: absolute;
-                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-                }
-
-                .img-about:nth-of-type(1) {
-                    top: 1%;
-                    left: 29%;
-                    width: 140px;
-                    height: 140px;
-                    background: url(../img/planete-cercle-bleu.jpg) center/cover;
-                }
-
-                .img-about:nth-of-type(2) {
-                    top: 35%;
-                    left: 2%;
-                    width: 180px;
-                    height: 180px;
-                    background: url(../img/depositphotos_7689364-stock-photo-ringed-planet.jpg) center/cover;
-                }
-
-                .img-about:nth-of-type(3) {
-                    top: 40%;
-                    left: 46%;
-                    width: 120px;
-                    height: 120px;
-                    background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-                }
+            .img-about:nth-of-type(1) {
+                top: 2rem;
+                left: 5rem;
+                width: 140px;
+                height: 140px;
+                background: url(../img/planete-cercle-bleu.jpg) center/cover;
             }
+
+            .img-about:nth-of-type(2) {
+                top: 8.2rem;
+                left: 9.5rem;
+                width: 180px;
+                height: 180px;
+                background: url(../img/depositphotos_7689364-stock-photo-ringed-planet.jpg) center/cover;
+            }
+
+            .img-about:nth-of-type(3) {
+                top: 9.1rem;
+                left: 1.7rem;
+                width: 120px;
+                height: 120px;
+                background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
+            }
+        }
+    }
+        // Responsive 
+        @media screen and (max-width: 767px) {
+            .sect-txt {
+                width: 80%;
+
+                display: flex;
+                flex-direction: column;
+
+                .title-sect {
+                    width: 100%;
+                    padding: 20px;
+                }
+                .img-container-about {
+                    width: 100%;
+                    margin-left: 10%;
+
+                    margin-bottom: 80px;
+
+                }
+
+            }
+    }
+}
+
+.bloc-members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 50px 0;
+
+    @media screen and (max-width:990px) {
+
+        flex-direction: column;
+
+        .team-img {
+            max-height: 230px;
 
         }
     }
 
+    .team-member {
+        display: flex;
+        flex-direction: column;
 
-    .bloc-members {
+        // margin-bottom: 80px;
+        // border-top-right-radius: 6px;
+        // border-bottom-left-radius: 6px;
+        // border-top-left-radius: 50% 30%;
+        // border-bottom-right-radius: 50% 30%;
+        // box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
+        // transition: all ease-in-out .3s;
+        // overflow: hidden;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .team-img {
+        max-width: 230px;
+        height: 330px;
+        margin-bottom: 15px;
         display: flex;
         justify-content: center;
-        gap: 50px;
         align-items: center;
-        margin: 50px 0;
 
-        .team-member {
-            width: 22%;
-            text-align: left;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 50% 30%;
+        border-bottom-right-radius: 50% 30%;
+        box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
+        transition: all ease-in-out .3s;
+        overflow: hidden;
 
+        img {
+            transform: scale(2.2);
 
-            .img-container {
-                max-width: 230px;
-                height: 330px;
-                margin-bottom: 50px;
-                border-top-right-radius: 6px;
-                border-bottom-left-radius: 6px;
-
-                border-top-left-radius: 50% 30%;
-                border-bottom-right-radius: 50% 30%;
-                box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
-                transition: all ease-in-out .3s;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-
-            &:nth-of-type(1) {
-                .img-container {
-                    background: url(../img/e.t) center/cover;
-                }
-            }
-
-            &:nth-of-type(2) {
-                .img-container {
-                    background: url(../img/yoda.jpg) center/cover;
-                }
-            }
-
-            &:nth-of-type(3) {
-                .img-container {
-                    background: url(../img/Infos-et-Actu5807affb05f73.jpg) center/cover;
-                }
+            @media screen and (max-width:990px) {
+                transform: scale(1.5);
             }
 
         }
+
+
+
     }
 
 
 
-    // Responsive 
-    @media screen and (max-width: 1170px) {
-        .wrapper {
-            width: 85%;
+
+
+
+
+@media screen and (max-width: 1170px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .home-blocs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-packages {
+        width: 100%;
+    }
+
+    .sect-request {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title-sect {
+            width: 90%;
+            max-width: 90%;
+            align-items: center;
+            gap: 2em;
+            padding: 0;
         }
 
         img {
             width: 100%;
-        }
-
-        .home-blocs {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .article-packages {
-            width: 100%;
-        }
-
-        .sect-request {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .title-sect {
-                width: 90%;
-                max-width: 90%;
-                align-items: center;
-                gap: 2em;
-                padding: 0;
-            }
-
-            img {
-                width: 100%;
-                max-width: 100%;
-            }
+            max-width: 100%;
         }
     }
-
-    @media screen and (max-width: 767px) {
-        .wrapper {
-            width: 95%;
-        }
-
-        .sect-offer {
-            .offer-article {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 0;
-
-                .txt-about {
-                    width: 100%;
-                }
-
-                .img-container-about {
-                    width: 100%;
-
-                    .img-about:nth-of-type(1) {
-                        top: 0%;
-                        left: 40%;
-                    }
-
-                    .img-about:nth-of-type(2) {
-                        top: 35%;
-                        left: 21%;
-                    }
-
-                    .img-about:nth-of-type(3) {
-                        top: 39%;
-                        left: 53%;
-                    }
-                }
-            }
-        }
-    }
+}
 }
