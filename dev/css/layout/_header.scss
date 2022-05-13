@@ -15,10 +15,13 @@
         
     }
     span {
-        font-size: 1rem;
-        text-transform: uppercase;
+        font-size: 4rem;
+        // text-transform: uppercase;
         font-weight: 300;
+        color: white;
+        text-shadow: 0 0 5px rgba(255,255,255,.8);
     }
+    
     // Le titre
     .head-txt {
         width: 50%;
@@ -36,7 +39,7 @@
             }
         }
     }
-    .btn {
+    .btn3 {
         margin-top: 1rem;
     }
 }
@@ -54,11 +57,27 @@ a:hover {
     -moz-animation: AnimatedGradient 17s ease infinite;
     animation: AnimatedGradient 17s ease infinite;
     .head-txt {
-        margin-top: 250px;
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        
     }
-
-
+    h1 {
+        font-size: 15em;
+        color: $white;
+        text-shadow: 0 0 8px rgba(255,255,255,.8);
+    }
+    
+}
+.home {
+    .head-nav {
+        display: none;
+    }
+    a {
+        color: $white;
+    }
 }
 
 // Pour les autres pages

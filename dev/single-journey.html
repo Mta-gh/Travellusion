@@ -39,9 +39,9 @@
                     <a href="index.html"><img src="img/favicon.png" alt="Travellusion"></a>
                     <a href="index.html">home</a>
                     <a href="about.html">about us</a>
-                    <a href="team.html">our team</a>
-                    <a href="journeys.html">our journeys</a>
-                    <a href="news.html">our news</a>
+                    <a href="team.html">team</a>
+                    <a href="journeys.html">journeys</a>
+                    <a href="news.html">news</a>
                     <a href="contact.html">contact</a>    
                     <div class="elBurgerito">
                         <span class="burger-line"></span>
@@ -202,13 +202,13 @@
         let container = document.querySelector('.planet-container');
         let containerHeight = container.offsetHeight;
         let containerwidth = container.clientWidth;
-        console.log(containerwidth)
         
-        console.log(container)
-        const scene = new THREE.Scene({ alpha: true }); // add aplha :true to allow alpha
+        const scene = new THREE.Scene({ alpha: true }); // add alpha :true to allow alpha
         const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
         
-        const texture = new THREE.TextureLoader().load( 'img/mars2.jpg' );
+        const texture = new THREE.TextureLoader().load( 'img/ecumenopolis.png' );
+        texture.offset.set(0, .02);
+        
         
         
         const renderer = new THREE.WebGLRenderer();
@@ -228,7 +228,10 @@
         const controls = new OrbitControls( camera, renderer.domElement );
         // disable zoom 
         controls.enableZoom = false;
+        controls.keys = false;
         camera.position.z = 5;
+
+
         
         function animate() {
             requestAnimationFrame( animate );

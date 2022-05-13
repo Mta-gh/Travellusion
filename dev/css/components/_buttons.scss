@@ -22,3 +22,17 @@
     border-radius: 0;
 }
 
+.btn3 {
+    font-size: 2em;
+    color: $white;
+    background-color: black;
+    transition: all $transition;
+    padding: 13px 23px ;
+    border-radius: 50px;
+    &:hover {
+        background-color: aquamarine;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 0 10px rgba($color: aquamarine, $alpha: 1.0);
+    }
+
+}
