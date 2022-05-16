@@ -192,53 +192,63 @@
     
     <script type="module">
         
-        // import { OrbitControls } from "./OrbitControls.js";
         import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
         
-        const bgColour = {
-            color: '#000000'
-        };
-        
-        let container = document.querySelector('.planet-container');
-        let containerHeight = container.offsetHeight;
-        let containerwidth = container.clientWidth;
-        
-        const scene = new THREE.Scene({ alpha: true }); // add alpha :true to allow alpha
-        const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
-        
-        const texture = new THREE.TextureLoader().load( 'img/ecumenopolis.png' );
-        texture.offset.set(0, .02);
-        
-        
-        
-        const renderer = new THREE.WebGLRenderer();
-        // set background as transparent
-        renderer.setClearColor(0xffffff, 0);
-        
-        renderer.setSize( containerwidth, containerHeight );
-        container.appendChild( renderer.domElement );
-        
-        const geometry = new THREE.SphereGeometry(1, 64, 64);
-        const material = new THREE.MeshBasicMaterial( { map: texture } );
-        
-        const sphere = new THREE.Mesh( geometry, material );
-        scene.add( sphere );
-        
-        // enable controls
-        const controls = new OrbitControls( camera, renderer.domElement );
-        // disable zoom 
-        controls.enableZoom = false;
-        controls.keys = false;
-        camera.position.z = 5;
-
-
-        
-        function animate() {
-            requestAnimationFrame( animate );
-            sphere.rotation.y += 0.005;
-            renderer.render( scene, camera );
+        function init(){
+            const bgColour = {
+                color: '#000000'
+            };
+            
+            let container = document.querySelector('.planet-container');
+            let containerHeight = container.offsetHeight;
+            let containerwidth = container.clientWidth;
+            
+            const scene = new THREE.Scene({ alpha: true }); // add alpha :true to allow alpha
+            const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
+            
+            const texture = new THREE.TextureLoader().load( 'img/ecumenopolis.png' );
+            texture.offset.set(0, .02);
+            
+            const renderer = new THREE.WebGLRenderer();
+            // set background as transparent
+            renderer.setClearColor(0xffffff, 0);
+            
+            renderer.setSize( containerwidth, containerHeight );
+            container.appendChild( renderer.domElement );
+            
+            const geometry = new THREE.SphereGeometry(1, 64, 64);
+            const material = new THREE.MeshBasicMaterial( { map: texture } );
+            
+            const sphere = new THREE.Mesh( geometry, material );
+            scene.add( sphere );
+            
+            // enable controls
+            const controls = new OrbitControls( camera, renderer.domElement );
+            // disable zoom 
+            controls.enableZoom = false;
+            controls.keys = false;
+            camera.position.z = 5;
+            
+            window.addEventListener("resize", onWindowResize, false)
+            
+            function animate() {
+                requestAnimationFrame( animate );
+                sphere.rotation.y += 0.005;
+                renderer.render( scene, camera );
+            }
+            animate();
+            
         }
-        animate();
+        init();
+        
+        Responsive
+        function onWindowResize() {
+            camera.aspect=container.innerWidth / container.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.innerWidth, container.innerHeight)
+        }
+        
+        
         
         
     </script>
