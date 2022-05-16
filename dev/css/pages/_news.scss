@@ -43,6 +43,8 @@
 
         img {
             width: 100%;
+            transform: translateY(-40px);
+
         }
     }
 }
@@ -81,9 +83,10 @@
 
     .popular-links {
         position: relative;
+        height: 80px;
 
         img {
-            width: 80px;
+            width: 75px;
             height: 50px;
             background-size: cover;
             background-position: center;
