@@ -11,10 +11,6 @@
         }
     }
 
-    .img-container {
-        border-radius: 50%;
-        background: rgb(49, 193, 151);
-    }
 }
 
 // Main content
@@ -27,6 +23,7 @@
         box-shadow: 0 5px 10px -13px rgb(0 0 0 / 80%), inset 0 -5px 10px -12px rgb(0 0 0 / 80%);
         padding: 3em;
     }
+
     .news-article:nth-of-type(3) {
         border-bottom: 0;
         box-shadow: none;
@@ -40,8 +37,15 @@
         border-top-right-radius: 200% 100%;
         border-bottom-right-radius: 150% 200%;
         border-bottom-left-radius: 30% 50px;
-        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-        box-shadow: 0 0 15px rgba(0,0,0,.3),inset 0 0 6px rgba(0,0,0,.3);
+        box-shadow: 0 0 15px rgba(0, 0, 0, .3), inset 0 0 6px rgba(0, 0, 0, .3);
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transform: translateY(-40px);
+
+        }
     }
 }
 
@@ -79,17 +83,16 @@
 
     .popular-links {
         position: relative;
-        
-        &::before {
-            content: '';
-            width: 80px;
+        height: 80px;
+
+        img {
+            width: 75px;
             height: 50px;
             background-size: cover;
             background-position: center;
             position: absolute;
             top: 0;
             left: 0;
-            
         }
 
         h4,
@@ -106,23 +109,6 @@
             font-size: .8em;
             margin: 5px 0 10px;
         }
-    }
-
-    .popular-links:nth-of-type(2)::before {
-        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-        
-    }
-
-    .popular-links:nth-of-type(3)::before {
-        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-    }
-
-    .popular-links:nth-of-type(4)::before {
-        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-    }
-
-    .popular-links:nth-of-type(5)::before {
-        background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
     }
 
     // 2nd Part
@@ -149,9 +135,11 @@
     .news-content img {
         width: 100%;
     }
+
     .news-content {
         margin-bottom: 45px;
     }
+
     .news-right {
         margin-left: 0;
     }
@@ -160,7 +148,6 @@
 // Mobile
 @media screen and (max-width: 768px) {
 
-    
     // Tout flexer
     .article-content {
         display: flex;

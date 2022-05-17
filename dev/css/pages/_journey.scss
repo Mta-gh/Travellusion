@@ -7,7 +7,7 @@
 .section-journeys-blocs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap : 45px;
+    gap : 2rem;
     padding-bottom: 8em;
     a:hover{
         color: $black-txt
@@ -21,22 +21,29 @@
 
 
 .article-journeys {
+    
+    height: 750px;
     transition: $transition;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     h3{
         margin: 0;
         text-align: center;
     }
     img {
         padding: 2em 0;
+        max-width: 250px;
+        height: 250px;
     }
     .journey-content {
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
     .btn {
         margin-top: 3em;

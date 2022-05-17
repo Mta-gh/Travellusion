@@ -3,9 +3,7 @@ body {
     color: $black-txt;
     font-size: 14px;
     background: rgb(227,227,227);
-    // background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(234,238,238,1) 75%, rgba(79,224,243,1) 100%);
-    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
-
+    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(234,238,238,1) 75%, rgba(79,224,243,1) 100%);
 }
 
 .wrapper {
@@ -112,11 +110,4 @@ input, textarea {
     // body {
         //     font-size: 18px;
         // }
-    }
-
-
-
-    ///test///
-    a{
-        cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFZJREFUeNqdzksKwDAIAFHH+x+6lIYOVPOhs5OHJnES/5UkYKEkU7xjijSIm50iFh4fAXgYDd/yumVVRSwsqq/nRA3xVK0oo06d5U6DpQZ7PV7lMxH7LkaQAbYFwryzAAAAAElFTkSuQmCC),auto;
     }

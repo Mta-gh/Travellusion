@@ -1,6 +1,6 @@
 <img src="https://media.giphy.com/media/UbGeaG4oy5sqSHNhc6/giphy-downsized-large.gif" width="300" align="center" />
 
-Link to the website :  
+Link to the website :  https://mta-gh.github.io/Travellusion/prod
 
 # Projet de fin de formation orchestré par :
 
