@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Journey</title>
 </head>
 <!-- ************* changer class en css ici-->
@@ -124,7 +125,25 @@
             <!-- end prix et captain& -->
             <!-- Swiper ◀️ ▶️ -->
             <section class="journey-swiper">
-                <img src="img/planete-cercle-bleu.jpg" alt="">
+                <!-- <img src="img/planete-cercle-bleu.jpg" alt=""> -->
+                
+                
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/planete-cercle-bleu.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/astronomy-g93710ea3d_1920.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/planete-cercle-bleu.jpg" alt=""></div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+                
             </section>
         </div>
         
@@ -186,14 +205,16 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="js/main.min.js"></script>
     <script src="js/three.js"></script>
-    
-    
     <script type="module">
         
         import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
         
+        
+
         function init(){
             const bgColour = {
                 color: '#000000'
@@ -241,7 +262,6 @@
         }
         init();
         
-        Responsive
         function onWindowResize() {
             camera.aspect=container.innerWidth / container.innerHeight;
             camera.updateProjectionMatrix();

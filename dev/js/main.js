@@ -62,8 +62,27 @@ links.forEach(link => {
 });
 
 document.addEventListener('mousemove', (e) => {
-	cursorito.setAttribute(
-		'style',
-		'top: ' + e.pageY + 'px; left: ' + e.pageX + 'px;'
-	);
-});
+    cursorito.setAttribute(
+        'style',
+        'top: ' + e.pageY + 'px; left: ' + e.pageX + 'px;'
+        );
+    });
+    
+    
+    
+    
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        
+        
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        
+        
+    });

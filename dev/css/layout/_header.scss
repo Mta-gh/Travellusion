@@ -65,7 +65,7 @@ a:hover {
         
     }
     h1 {
-        font-size: 15em;
+        font-size: calc(10em + 10%);
         color: $white;
         text-shadow: 0 0 8px rgba(255,255,255,.8);
     }
