@@ -7,6 +7,7 @@
         }
         
         .contact-form {
+            height: 85vh;
             padding: 3rem;
             flex-grow: 1;
             display: grid;
@@ -20,8 +21,9 @@
             ;
             gap: 2em;
             margin: 4rem;
-            .textarea {
+            .form-control-text{
                 grid-area: mess;
+                resize: none;
             }
             .btn {
                 grid-area: btn;
@@ -29,20 +31,22 @@
                 justify-self: end;
             }
 
-            .input, .textarea{
+            .form-control{
+                width: 100%;
                 box-shadow: 1px 1px 2px #5555552a, -1px -1px 4px #ffffff8c, 5px 5px 10px #49494917;
                 backdrop-filter: blur(5px);
                 border-radius: 20px 0;
                 cursor: cell;
+                border-color: transparent;
             }
-            .input::placeholder, .textarea::placeholder{
+            .form-control::placeholder{
                 color: $color7;
                 opacity: .7;
             }
-            .input:focus, .textarea:focus{
+            .form-control:focus{
                 outline: none !important;
-
             }
+            
         }
     }
     .contact-info {
