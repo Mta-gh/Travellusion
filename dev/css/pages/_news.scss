@@ -82,22 +82,17 @@
 
 
     .popular-links {
-        position: relative;
-        height: 80px;
+        display: flex;
+        height: 50px;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 2rem;
+img{
+    width: 70px;
 
-        img {
-            width: 75px;
-            height: 50px;
-            background-size: cover;
-            background-position: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        h4,
-        p {
-            padding-left: 90px;
+}
+        .content {
+            align-self: flex-start;
         }
 
         h4 {
