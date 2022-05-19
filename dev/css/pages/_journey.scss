@@ -88,6 +88,13 @@
         h3, h2 {
             margin-bottom: 0;
         }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            .info-lines {
+                display: none;
+            }
+        }
     }
     .img-container-single {
         display: flex;
@@ -149,5 +156,13 @@
     overflow: hidden;
     img {
         display: block;
+    }
+}
+
+.planet-container {
+    height: 60vh;
+    padding-bottom: 2em;
+    canvas:focus-visible {
+        outline: none;
     }
 }
