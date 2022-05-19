@@ -126,8 +126,6 @@
             <!-- Swiper ◀️ ▶️ -->
             <section class="journey-swiper">
                 <!-- <img src="img/planete-cercle-bleu.jpg" alt=""> -->
-                
-                
                 <!-- Slider main container -->
                 <div class="swiper">
                     <!-- Additional required wrapper -->
@@ -209,6 +207,8 @@
 
     <script src="js/main.min.js"></script>
     <script src="js/three.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
     <script type="module">
         
         import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
@@ -227,7 +227,7 @@
             const scene = new THREE.Scene({ alpha: true }); // add alpha :true to allow alpha
             const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
             
-            const texture = new THREE.TextureLoader().load( 'img/ecumenopolis.png' );
+            const texture = new THREE.TextureLoader().load( 'img/xaradise.jpg' );
             texture.offset.set(0, .02);
             
             const renderer = new THREE.WebGLRenderer();
