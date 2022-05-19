@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Journey</title>
 </head>
 <!-- ************* changer class en css ici-->
@@ -65,8 +66,7 @@
                 <h3>Andromeda Galaxy</h3>
             </div>
             <!-- L'image de la planète 🌍 -->
-            <div class="img-container img-container-single">
-                <img src="img/green-mars.png" alt="kosten-planet">
+            <div class="img-container img-container-single planet-container">
             </div>
             <!--1 Première section 🏅-->
             <section class="journey-description">
@@ -131,7 +131,23 @@
             <!-- end prix et captain& -->
             <!-- Swiper ◀️ ▶️ -->
             <section class="journey-swiper">
-                <img src="img/planete-cercle-bleu.jpg" alt="">
+                <!-- <img src="img/planete-cercle-bleu.jpg" alt=""> -->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/planete-cercle-bleu.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/astronomy-g93710ea3d_1920.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/planete-cercle-bleu.jpg" alt=""></div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+                
             </section>
         </div>
 
@@ -193,7 +209,75 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="js/main.min.js"></script>
+    <script src="js/three.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <script type="module">
+        
+        import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
+        
+        
+
+        function init(){
+            const bgColour = {
+                color: '#000000'
+            };
+            
+            let container = document.querySelector('.planet-container');
+            let containerHeight = container.offsetHeight;
+            let containerwidth = container.clientWidth;
+            
+            const scene = new THREE.Scene({ alpha: true }); // add alpha :true to allow alpha
+            const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
+            
+            const texture = new THREE.TextureLoader().load( 'img/ecumenopolis.png' );
+            texture.offset.set(0, .02);
+            
+            const renderer = new THREE.WebGLRenderer();
+            // set background as transparent
+            renderer.setClearColor(0xffffff, 0);
+            
+            renderer.setSize( containerwidth, containerHeight );
+            container.appendChild( renderer.domElement );
+            
+            const geometry = new THREE.SphereGeometry(1, 64, 64);
+            const material = new THREE.MeshBasicMaterial( { map: texture } );
+            
+            const sphere = new THREE.Mesh( geometry, material );
+            scene.add( sphere );
+            
+            // enable controls
+            const controls = new OrbitControls( camera, renderer.domElement );
+            // disable zoom 
+            controls.enableZoom = false;
+            controls.keys = false;
+            camera.position.z = 5;
+            
+            window.addEventListener("resize", onWindowResize, false)
+            
+            function animate() {
+                requestAnimationFrame( animate );
+                sphere.rotation.y += 0.005;
+                renderer.render( scene, camera );
+            }
+            animate();
+            
+        }
+        init();
+        
+        function onWindowResize() {
+            camera.aspect=container.innerWidth / container.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.innerWidth, container.innerHeight)
+        }
+        
+        
+        
+        
+    </script>
 </body>
 
 </html>
