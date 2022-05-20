@@ -42,12 +42,12 @@
                     <a href="journeys.html">journeys</a>
                     <a href="news.html">news</a>
                     <a href="contact.html">contact</a>   
-                    <div class="elBurgerito">
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                    </div>
                 </nav>
+            </div>
+            <div class="elBurgerito">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
             </div>
             <!-- le titre et txt du header -->
             <div class="head-txt">
@@ -92,13 +92,24 @@
                     </div>
                 </div>
                 <!-- la partie form -->
-                <form action="" class="contact-form">
-                    
-                    <input type="name" value="Enter your name">
-                    <input type="email" value="Enter your email address">
-                    <input type="text" value="Enter subject">
-                    <textarea name="proj-desc" id="message" rows="10" placeholder="Enter message"></textarea>
-                    <button class="btn">send message</button>
+                <form method="post" action="">
+                    <div class="contact-form box-200-right">
+                        <div class="form-col">
+                            <input class="form-control form-control-name" type="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-col">
+                            <input class="form-control form-control-email" type="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-col">
+                            <input class="form-control form-control-subject" type="text" placeholder="Enter subject">
+                        </div>
+                        <div class="form-col">
+                            <textarea class="form-control form-control-text" name="proj-desc" id="message" rows="10" placeholder="Enter message"></textarea>
+                        </div>
+                        <div class="form-col"></div>
+                        <button class="btn">send message</button>
+                        </div>
+                    </div>
                 </form>
             </div>
             

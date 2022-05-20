@@ -3,6 +3,8 @@ let link = document.querySelector(".elBurgerito")
 let contact = document.querySelector(".burger-popup")
 let overlay = document.querySelector(".overloff")
 
+
+
 // 2 fonctions pour utiliser le burger et l'overlay pour toggle le menu
 
 // Burger
@@ -61,6 +63,17 @@ links.forEach(link => {
     })
 });
 
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener('mousemove', (e) => {
     cursorito.setAttribute(
         'style',
@@ -86,3 +99,8 @@ document.addEventListener('mousemove', (e) => {
         
         
     });
+
+
+
+
+
