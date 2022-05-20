@@ -7,42 +7,58 @@
         }
         
         .contact-form {
+            max-width: 900px;
+            align-items: self-start;
             padding: 3rem;
             flex-grow: 1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
             grid-template-areas: 
-            "name mess"
-            "email mess"
-            "sub mess"
-            ". btn"
+            "name email"
+            "subject ."
+            "mess mess"
+            "mess mess"
+            "btn ."
             ;
-            gap: 2em;
-            margin: 4rem;
-            .textarea {
+            grid-column-gap: 2em;
+            margin: 4em auto;
+            .form-col:nth-of-type(4){
                 grid-area: mess;
+                resize: none;
             }
-            .btn {
+            .form-col:nth-of-type(1){
+                grid-area: name;
+            }
+            .form-col:nth-of-type(2){
+                grid-area: email;
+            }
+            .form-col:nth-of-type(3){
+                grid-area: subject;
+            }
+            .form-col:nth-of-type(5){
+                margin-top: 2em;
                 grid-area: btn;
                 width: max-content;
-                justify-self: end;
+                max-height: 3rem;
             }
 
-            .input, .textarea{
+            .form-control{
+                width: 100%;
                 box-shadow: 1px 1px 2px #5555552a, -1px -1px 4px #ffffff8c, 5px 5px 10px #49494917;
                 backdrop-filter: blur(5px);
                 border-radius: 20px 0;
                 cursor: cell;
+                border-color: transparent;
             }
-            .input::placeholder, .textarea::placeholder{
+            .form-control::placeholder{
                 color: $color7;
                 opacity: .7;
             }
-            .input:focus, .textarea:focus{
+            .form-control:focus{
                 outline: none !important;
-
             }
+            
         }
     }
     .contact-info {
@@ -83,13 +99,15 @@
 }
 
 // Responsive 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 990px) {
     .contact-info-form {
         flex-direction: column;
     }
     .contact .wrapper .contact-form {
         display: flex;
         flex-direction: column;
+        gap: 2em;
+        align-items: stretch;
     }
     .contact .btn {
         align-self: flex-end;

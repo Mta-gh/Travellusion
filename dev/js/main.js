@@ -3,6 +3,8 @@ let link = document.querySelector(".elBurgerito")
 let contact = document.querySelector(".burger-popup")
 let overlay = document.querySelector(".overloff")
 
+
+
 // 2 fonctions pour utiliser le burger et l'overlay pour toggle le menu
 
 // Burger
@@ -61,9 +63,44 @@ links.forEach(link => {
     })
 });
 
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener('mousemove', (e) => {
-	cursorito.setAttribute(
-		'style',
-		'top: ' + e.pageY + 'px; left: ' + e.pageX + 'px;'
-	);
-});
+    cursorito.setAttribute(
+        'style',
+        'top: ' + e.pageY + 'px; left: ' + e.pageX + 'px;'
+        );
+    });
+    
+    
+    
+    
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        
+        
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        
+        
+    });
+
+
+
+
+
