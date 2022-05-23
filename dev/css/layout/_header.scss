@@ -31,7 +31,6 @@
         justify-content: center;
         z-index: 4;
         flex-grow: 1;
-        margin-top: -50px;
         @media screen and (max-width: 768px) {
             width: 100%;
             h1 {
@@ -39,6 +38,7 @@
             }
         }
     }
+
     .btn3 {
         margin-top: 1rem;
     }
@@ -84,7 +84,7 @@ a:hover {
     .header {
         height: 35vh;
         @media screen and (max-width: 768px) {
-            height: 50vh;
+            height: 20vh;
         }
     }
     .head-txt {
@@ -100,7 +100,15 @@ a:hover {
         align-items: center;
         gap: 10px;
         font-weight: 300;
+
+    
+        @media screen and (max-width: 1140px) {
+            text-align: justify;
+      
     }
+    
+    
+      }
 }
 
 

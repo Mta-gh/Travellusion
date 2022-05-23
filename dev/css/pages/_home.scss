@@ -1,21 +1,4 @@
 
-.title-sect {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-        margin: 0;
-    }
-    h2 {
-        margin-bottom: .5em;
-    }
-    padding: 4em 0;
-    @media screen and (max-width: 1140px) {
-        text-align: justify;
-    }
-}
-
 
 
 
@@ -108,6 +91,7 @@
 
 
 .home {
+    overflow: hidden;
     canvas {
         position: absolute;
         top: 0;
