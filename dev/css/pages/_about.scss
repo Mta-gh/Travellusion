@@ -1,34 +1,34 @@
 .about {
     text-align: justify;
-
-
+    
+    
     // Les boites de chaque hotel
     .title-sect {
-
+        
         padding: 20px;
     }
-
+    
     .sect-txt {
         width: 70%;
         margin-bottom: 50px;
         display: flex;
         gap: 5%;
-
+        
         .title-sect {
             width: 90%;
             padding: 20px;
         }
-
+        
         .img-container-about {
             width: 50%;
             height: 300px;
             position: relative;
-
+            
             .img-about {
                 position: absolute;
                 clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             }
-
+            
             .img-about:nth-of-type(1) {
                 top: 2rem;
                 left: 5rem;
@@ -36,7 +36,7 @@
                 height: 140px;
                 background: url(../img/planete-cercle-bleu.jpg) center/cover;
             }
-
+            
             .img-about:nth-of-type(2) {
                 top: 8.2rem;
                 left: 9.5rem;
@@ -44,7 +44,7 @@
                 height: 180px;
                 background: url(../img/depositphotos_7689364-stock-photo-ringed-planet.jpg) center/cover;
             }
-
+            
             .img-about:nth-of-type(3) {
                 top: 9.1rem;
                 left: 1.7rem;
@@ -57,27 +57,67 @@
     .sect-about {
         margin-top: 5em;
     }
-        // Responsive 
-        @media screen and (max-width: 767px) {
-            .sect-txt {
-                width: 80%;
-
-                display: flex;
-                flex-direction: column;
-
-                .title-sect {
-                    width: 100%;
-                    padding: 20px;
-                }
-                .img-container-about {
-                    width: 100%;
-                    margin-left: 10%;
-
-                    margin-bottom: 80px;
-
-                }
-
+    .about-swiper {
+        width: 50%;
+        .swiper {
+            padding: 3em 4em 4em;
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-txt {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .img-container {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+            
+        }
+        p:nth-of-type(2) {
+            font-weight: 700;
+            margin-top: 1em;
+            text-shadow : 0 0 2px rgba(0, 0, 0, 0.6);
+            
+        }
+        .swiper-button-prev {
+            left: 30px;
+        }
+        .swiper-button-next {
+            right: 30px;
+        }
+        
+    }
+    // Responsive 
+    @media screen and (max-width: 767px) {
+        .sect-txt {
+            width: 80%;
+            
+            display: flex;
+            flex-direction: column;
+            
+            .title-sect {
+                width: 100%;
+                padding: 20px;
             }
+            .img-container-about {
+                width: 100%;
+                margin-left: 10%;
+                
+                margin-bottom: 80px;
+                
+            }
+            
+        }
     }
 }
 
@@ -87,21 +127,21 @@
     gap: 50px;
     align-items: center;
     margin: 50px 0;
-
+    
     @media screen and (max-width:990px) {
-
+        
         flex-direction: column;
-
+        
         .team-img {
             max-height: 230px;
-
+            
         }
     }
-
+    
     .team-member {
         display: flex;
         flex-direction: column;
-
+        
         // margin-bottom: 80px;
         // border-top-right-radius: 6px;
         // border-bottom-left-radius: 6px;
@@ -110,12 +150,12 @@
         // box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
         // transition: all ease-in-out .3s;
         // overflow: hidden;
-
+        
         &:hover {
             transform: scale(1.1);
         }
     }
-
+    
     .team-img {
         max-width: 230px;
         height: 330px;
@@ -123,7 +163,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         border-top-right-radius: 6px;
         border-bottom-left-radius: 6px;
         border-top-left-radius: 50% 30%;
@@ -131,61 +171,61 @@
         box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
         transition: all ease-in-out .3s;
         overflow: hidden;
-
+        
         img {
             transform: scale(2.2);
-
+            
             @media screen and (max-width:990px) {
                 transform: scale(1.5);
             }
-
+            
         }
-
-
-
+        
+        
+        
     }
-
-
-
-
-
-
-
-@media screen and (max-width: 1170px) {
-    .wrapper {
-        width: 85%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .home-blocs {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .article-packages {
-        width: 100%;
-    }
-
-    .sect-request {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .title-sect {
-            width: 90%;
-            max-width: 90%;
-            align-items: center;
-            gap: 2em;
-            padding: 0;
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 1170px) {
+        .wrapper {
+            width: 85%;
         }
-
+        
         img {
             width: 100%;
-            max-width: 100%;
+        }
+        
+        .home-blocs {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-packages {
+            width: 100%;
+        }
+        
+        .sect-request {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .title-sect {
+                width: 90%;
+                max-width: 90%;
+                align-items: center;
+                gap: 2em;
+                padding: 0;
+            }
+            
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
         }
     }
-}
 }
