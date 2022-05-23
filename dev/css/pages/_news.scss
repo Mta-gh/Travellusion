@@ -59,6 +59,7 @@
 
     h3 {
         margin: 0;
+        
     }
 
 
@@ -66,7 +67,11 @@
         text-align: center;
         text-transform: capitalize;
         margin: 3em 0 2em;
-        background: rgb(49, 193, 151);
+        background: aquamarine;
+        &:hover {
+    border-radius: 8px 0 8px 0;
+
+        }
     }
 }
 

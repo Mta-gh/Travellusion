@@ -110,7 +110,9 @@
     .single-journey-bloc {
         display: flex;
         flex-direction: column;
-        
+        h4 {
+            margin: 1em 0;
+        }
     }
     .single-journey-bloc:nth-of-type(1) {
         justify-content: space-between;
@@ -154,6 +156,8 @@
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     border-radius: 25px;
     overflow: hidden;
+    aspect-ratio: 16 / 9;
+
     img {
         display: block;
     }
