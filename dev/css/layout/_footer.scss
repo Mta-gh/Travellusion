@@ -120,12 +120,21 @@
     }
 }
 
-// insta
+// astra
 .foot-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: calc(10px + .2em);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: calc(10px + .2em);
+        img{
+        opacity: 0.6;
+        border-radius: 9px;
+        width: 80px;
+    }
+        }
+
+.gallery-img:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 }
 
 // RESPONSIVE

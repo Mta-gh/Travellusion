@@ -40,17 +40,22 @@
         }
     }
 
-    .team-img {
+    .team-img{
         margin: 0 auto;
         width: 450px;
         height: 450px;
+        border-radius: 0px 200px 0 200px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        border-radius: 0px 200px 0 200px;
-        background: url(../img/alien1.webp)top;
-        background-size: cover;
-        background-repeat: no-repeat;
+        overflow: hidden;
+        img{
+            max-width: fit-content;
+        }
+        @media screen and (max-width: 990px) {
+        width: 250px;
+        height: 250px;
+        border-radius: 0px 150px 0 150px;
+    }
     }
 
     .team-proposal {
