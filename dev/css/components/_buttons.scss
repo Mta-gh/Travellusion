@@ -30,10 +30,14 @@
     transition: all $transition;
     padding: 13px 23px ;
     border-radius: 50px;
+    text-decoration: none;
     &:hover {
         background-color: aquamarine;
         text-shadow: 0 0 5px rgba(255, 255, 255, 1);
         box-shadow: 0 0 10px rgba($color: aquamarine, $alpha: 1.0);
     }
-
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
 }
+

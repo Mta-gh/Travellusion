@@ -9,11 +9,16 @@ let quitInit = false
 // Enter the wormhole function
 let buttonWormhole = document.querySelector('.btn3');
 
+// Pour la taille de la plante nav pour la taille du canvas
+let planetNav = document.querySelector('.planet-nav');
+let planetNavHeight = planetNav.offsetHeight;
+let planetNavwidth = planetNav.clientWidth;
+
 
 
 function init() {
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight, 1,1000);
+    camera = new THREE.PerspectiveCamera(45,planetNavwidth / planetNavHeight, 1,1000);
     camera.position.z = 4;
     camera.rotation.x = 1.17;
     camera.rotation.y = -0.10;
@@ -44,7 +49,7 @@ function init() {
     
     // add renderer
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth,window.innerHeight);
+    renderer.setSize(planetNavwidth,planetNavHeight);
     
     // add green fog
     scene.fog = new THREE.FogExp2(0x1a1e41, 0.001);
@@ -122,6 +127,6 @@ function init() {
         navito.style.transform = 'translateY(0%)';
         document.querySelector('.planet-nav-title').classList.add('active-h2');
         document.querySelector('.home-nav').classList.add('active-home-nav')
-
+        
         
     });
