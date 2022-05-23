@@ -1,7 +1,5 @@
 .contact {
     .wrapper {
-        display: flex;
-        flex-direction: column;
         iframe {
             margin: 8em 0;
         }
@@ -70,12 +68,6 @@
         align-content: center;
         text-align: justify;
         gap: 2em;
-        @media screen and (max-width: 1140px){
-
-        h4 {
-            font-size: smaller;
-        }
-        }
     }
     .info-bloc {
         display: flex;
@@ -100,6 +92,11 @@
 
 // Responsive 
 @media screen and (max-width: 990px) {
+    .contact-info {
+        h4 {
+            font-size: smaller;
+        }
+    }
     .contact-info-form {
         flex-direction: column;
     }

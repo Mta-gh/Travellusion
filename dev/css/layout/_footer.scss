@@ -1,106 +1,164 @@
 .footer {
-        -webkit-mask-image: -webkit-gradient(linear, right 40%, right top, from(black), to(rgba(0, 0, 0, 0)));
-        background: $holographic;
-        padding: 150px 0 50px;
-        z-index: -1;
-    @media screen and (max-width: 768px) {
-        -webkit-mask-image: -webkit-gradient(linear, right 13%, right top, from(black), to(rgba(0, 0, 0, 0)));
+    -webkit-mask-image: -webkit-gradient(linear, right 40%, right top, from(black), to(rgba(0, 0, 0, 0)));
+    background: $holographic;
+    padding: 90px 0 50px;
+    z-index: -1;
 
-    }
     h4 {
         color: #000000;
         text-transform: uppercase;
-        margin-top: 0;
-
+        margin: 0 0 1rem;
     }
-    p, a {
+
+    p,
+    a {
         color: #000000;
         font-weight: 300;
     }
+
     a {
         &:hover {
             color: $blue;
             transition: all $transition;
         }
     }
+
     .top-foot {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 3em;
-        padding: 3em;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
         border-radius: 10px;
         box-shadow: 5px 5px 10px #00000017, -1px -1px 2px #ffffff63, 1px 1px 2px #5555556b;
-        backdrop-filter: blur(5px);    }
-    // navigation
-    .foot-bloc:nth-of-type(2) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-content: start;
-        h4 {
-            grid-column: span 2;
-        }
-        a {
-            margin-bottom: 1em;
+        backdrop-filter: blur(5px);
+
+        .foot-bloc {
+            width: 25%;
+            height: 100%;
         }
     }
+
     .foot-links {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-    
-    .foot-inputs {
-        display: flex; 
-        button {
-            padding: 1em;
+
+        div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                padding: 0.4rem 0;
+            }
         }
+    }
+
+    button.btn {
+        padding: 0.8rem;
+    }
+
+    .foot-inputs {
+
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 0.2rem;
+
         .foot-input {
+            width: 70%;
             border: 1px solid $foot-txt;
             color: $foot-txt;
             background-color: rgba($color: #000000, $alpha: 0);
         }
+
         .fa-paper-plane {
             font-size: 1rem;
         }
     }
+
     .bottom-foot {
         display: flex;
         align-items: center;
         margin-top: 1.5em;
         padding-top: 1.5em;
         border-top: 1px solid $foot-txt;
-        a, .fa-heart {
+
+        a,
+        .fa-heart {
             color: $blue;
         }
     }
+
     .foot-socials {
         margin-left: auto;
+
         a {
             color: $white;
             margin-left: 1em;
         }
+
         a:nth-of-type(1) {
             margin-left: 0;
         }
     }
-    .top-foot, .bottom-foot {
+
+    .top-foot,
+    .bottom-foot {
         @media screen and (max-width: 768px) {
             display: flex;
             flex-direction: column;
+
             .foot-socials {
                 margin-left: 0;
                 margin-right: auto;
             }
+
             .foot-input {
                 flex-grow: 1;
             }
         }
     }
 }
+
 // insta
-    .foot-gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: calc(10px + .2em);
+.foot-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: calc(10px + .2em);
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1140px) {
+
+    h4 {
+        font-size: 0.9rem;
     }
+
+    p,
+    a {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        -webkit-mask-image: -webkit-gradient(linear, right 13%, right top, from(black), to(rgba(0, 0, 0, 0)));
+        padding: 70px 0 50px;
+        .top-foot {
+            display: flex;
+            flex-direction: column;
+
+            .foot-bloc {
+                width: 100%;
+
+                // insta
+                .foot-gallery {
+                width: 60%;
+                }
+            }
+
+        }
+    }
+}

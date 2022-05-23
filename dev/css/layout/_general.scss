@@ -6,12 +6,14 @@ body {
 }
 
 .wrapper {
-    max-width: 1190px;
+    max-width: 1140px;
     margin: 0 auto;
-    @media screen and (max-width: 1140px) {
-        width: 95%;
+    .section-title {
+        text-align: center;
+        padding: 20px 0 3rem;
     }
 }
+
 
 img {
     max-width: 100%;
@@ -26,12 +28,13 @@ h1, h2, h3, h4 {
     font-family: 'Syne', sans-serif;
     text-shadow : 0 0 3px rgba(0, 0, 0, 0.8);
     color: #000;
+
 }
 
 
 h1 {
     font-size: 4.5em;
-    display: flex;
+
     flex-direction: column;
     margin: 1rem 0 .5rem;
 }
@@ -39,6 +42,7 @@ h1 {
 h2 {
     font-size: 2.5em;
     text-transform: capitalize;
+    padding-bottom: 1rem;
 }
 h3 {
     font-size: 1.5em;
@@ -76,6 +80,8 @@ p {
     font-weight: 300;
     line-height: 1.5em;
     color: #000;
+
+
 }
 
 // concernant les forms/inputs
@@ -210,6 +216,18 @@ input, textarea {
 
 // Responsive 
 @media screen and (max-width: 768px) {
+    .wrapper {
+        width: 75%;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .section-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
     .error .main{
         h1{
             display: none;
@@ -223,3 +241,10 @@ input, textarea {
         }
     }
     
+
+    @media screen and (max-width: 1140px) {
+    .wrapper {
+            width: 90%;
+        }
+
+    } 

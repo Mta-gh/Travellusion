@@ -1,4 +1,5 @@
 .team {
+
     // Grid pour layout des boites
     .team-blocs {
         display: grid;
@@ -7,7 +8,8 @@
         gap: 45px;
         padding-bottom: 6em;
     }
-    .article-team{
+
+    .article-team {
         // padding: 2rem 1rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -15,23 +17,28 @@
         transition: box-shadow $transition;
         overflow: hidden;
         height: 330px;
+
         &:hover {
             box-shadow: 0 3px 30px rgba($color: #000000, $alpha: .25);
         }
+
         h3 {
             border-bottom: 0;
             margin-bottom: 0;
         }
+
         h5 {
             padding: .7em 0;
         }
     }
+
     // Les boites de chaque team
     .team-top {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     .team-extract {
         justify-content: space-between;
         align-items: center;
@@ -40,46 +47,50 @@
         // padding: .8em 0;
         padding-bottom: 1em;
     }
+
     .team-txt {
         padding: 2em 3em;
     }
-    
-    .article-team:nth-of-type(2){
-        .team-img{
+
+    .article-team:nth-of-type(2) {
+        .team-img {
             border-radius: 0 0 100px 0;
         }
-        .team-txt{
+
+        .team-txt {
             order: 2;
         }
-        
-    } 
-    
-    .team-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 0 100px;
-    display: block;
-    overflow: hidden;
-    img{
-        width: 100%;
-        @media screen and (min-width:990px){
-            height: 100%;
+
+    }
+
+    .team-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 100px;
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+
+            @media screen and (min-width:990px) {
+                height: 100%;
+            }
+        }
+
+        @media screen and (max-width:990px) {
+            width: 100%;
         }
     }
-    
-    @media screen and (max-width:990px){
-        width: 100%;
-    }
-}
 }
 
 
 //Responsive
 
-.team { 
-    @media screen and (max-width:990px){
-        .article-team{
+.team {
+    @media screen and (max-width:990px) {
+        .article-team {
             justify-content: center;
             display: flex;
             gap: 0;
@@ -87,37 +98,44 @@
             border-radius: 200px 0;
             opacity: .8;
             // -webkit-box-shadow: inset 5px 1px 45px 37px rgba(184,198,203,0.64); 
-            box-shadow:0 3px 30px rgb(0 0 0 / 25%), inset 5px 1px 45px 37px rgba(184, 198, 203, 0.699);
+            box-shadow: 0 3px 30px rgb(0 0 0 / 25%), inset 5px 1px 45px 37px rgba(184, 198, 203, 0.699);
             padding: 0;
             overflow: hidden;
             position: relative;
             height: 200px;
-            .team-txt{
+
+            .team-txt {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-            .team-top{
-                align-items: center;
-                color: white;
-                h3{
+
+                .team-top {
+                    align-items: center;
                     color: white;
+
+                    h3 {
+                        color: white;
+                    }
+                }
+                .team-extract {
+                    display: none;
                 }
             }
-            .team-extract{
-                display: none;
-            }
         }
-        }
-        .article-team:nth-of-type(2){
+
+        .article-team:nth-of-type(2) {
             border-radius: 0 200px;
-            .team-img{
+
+            .team-img {
                 border-radius: 0;
             }
+        }
+
+        .team-img {
+            border-radius: 0;
+            max-width: 100%;
+
+
+        }
     }
-    .team-img{
-        border-radius: 0;
-        max-width: 100%;
-    }
-    
-}
 }

@@ -1,32 +1,21 @@
-.section-title {
-    text-align: center;
-    padding-top: 4em;
-    padding-bottom: 6em;
-}
-
 .section-journeys-blocs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap : 2rem;
-    padding-bottom: 8em;
+    // padding-bottom: 8em;
     a:hover{
         color: $black-txt
     }
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
-
-
 .article-journeys {
-    
-    height: 750px;
+    min-height: 750px;
     transition: $transition;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
     h3{
         margin: 0;
@@ -44,6 +33,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+
+        .journey-description {
+            padding: 2em 0;
+        }
+
     }
     .btn {
         margin-top: 3em;
@@ -56,7 +50,11 @@
 .journey-details {
     display: flex;
     width: 100%;
+    height: 25px;
     justify-content: space-between;
+    align-items: center;
+
+
     p {
         font-family: 'Syne', sans-serif;
         font-weight: 700;
@@ -72,37 +70,36 @@
     height: 1px;
     background-color: $black-txt;
     box-shadow : 0 0 3px rgba(0, 0, 0, 0.8);
+
 }
 
 // Single journey
 .single-journey {
-    .main {
-    padding-bottom: 8em;
-
+    .header{
+        height: 15vh;
     }
+
     .section-title {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items:center;
         gap: 2em;
         h3, h2 {
             margin-bottom: 0;
-        }
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-            .info-lines {
-                display: none;
-            }
+            padding: 0;
         }
     }
     .img-container-single {
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
     .journey-description {
+        width: 90%;
         padding: 4em 0;
+        margin: 0 auto;
+        text-align: center;
         p:nth-of-type(1) {
             font-weight: 700;
         }
@@ -137,6 +134,9 @@
         justify-content: center;
         align-items: center;
         padding: 2em;
+        h4{
+            padding: 1rem 0;
+        }
     }
 }
 
@@ -144,14 +144,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 45px;
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 .journey-swiper {
-    margin-top: 8em;
+    margin: 8rem auto 0;
     width: 100%;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     border-radius: 25px;
@@ -168,5 +164,53 @@
     padding-bottom: 2em;
     canvas:focus-visible {
         outline: none;
+    }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 768px) {
+    .journey-description {
+       font-size: 0.8rem;
+    }
+    .journey-details {
+        p {
+            font-size: 0.7rem;
+             }
+        }
+    }
+
+@media screen and (max-width: 768px) {
+
+    .section-journeys-blocs {
+            display: flex;
+            flex-direction: column;    
+    }
+
+    .section-journey-single {
+            display: flex;
+            flex-direction: column;
+    }
+    .planet-container {
+        height: 40vh;
+        }
+    
+    .article-journeys {
+        min-height: 450px;
+
+    }
+    .single-journey .single-journey-bloc:nth-of-type(2) {
+        padding: 0;
+        display: grid;
+        grid-template-rows: 250px 200px;
+        overflow: hidden;
+        p {
+            margin: 0;
+        }
+        .img-container {
+            height: 250px;
+            overflow: hidden;
+            
+        }
     }
 }
