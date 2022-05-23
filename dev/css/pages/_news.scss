@@ -84,9 +84,7 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 3em;
-    h4 {
-        padding-bottom: 1em;
-    }
+    
 
     .popular-links {
         display: flex;
@@ -125,6 +123,12 @@ img{
             color: $blue;
         }
     }
+}
+
+.news-categories:last-of-type h4 {
+    
+        padding-bottom: 1em;
+    
 }
 
 // .news-categories:nth-of-type(2) {
