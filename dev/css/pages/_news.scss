@@ -84,7 +84,9 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 3em;
-
+    h4 {
+        padding-bottom: 1em;
+    }
 
     .popular-links {
         display: flex;

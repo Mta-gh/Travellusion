@@ -1,6 +1,6 @@
 .about {
     text-align: justify;
-
+    
     // Les boites de chaque hotel
     .sect-txt {
         margin-bottom: 50px;
@@ -8,7 +8,7 @@
         align-items: center;
         gap: 5%;
         position: relative;
-
+        
         .section-title {
             width: 70%;
         }
@@ -18,7 +18,7 @@
             justify-self: flex-start;
             position: relative;
             height: 300px;
-
+            
             .img-about {
                 position: absolute;
                 clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -52,46 +52,7 @@
     .sect-about {
         margin-top: 5em;
     }
-    .about-swiper {
-        width: 50%;
-        .swiper {
-            padding: 3em 4em 4em;
-        }
-        .swiper-slide {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .swiper-txt {
-            width: 70%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        .img-container {
-            border-radius: 50%;
-            overflow: hidden;
-            width: 100px;
-            height: 100px;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 8px rgb(0 0 0 / 30%);
-            
-        }
-        p:nth-of-type(2) {
-            font-weight: 700;
-            margin-top: 1em;
-            text-shadow : 0 0 2px rgba(0, 0, 0, 0.6);
-            
-        }
-        .swiper-button-prev {
-            left: 30px;
-        }
-        .swiper-button-next {
-            right: 30px;
-        }
-        
-    }
+    
     // Responsive 
     @media screen and (max-width: 767px) {
         .sect-txt {
@@ -116,16 +77,59 @@
     }
 }
 
+// swiper
+
+.about-swiper {
+    width: 50%;
+    .swiper {
+        padding: 3em 4em 4em;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-txt {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-container {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.5em;
+        box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+        
+    }
+    p:nth-of-type(2) {
+        font-weight: 700;
+        margin-top: 1em;
+        text-shadow : 0 0 2px rgba(0, 0, 0, 0.6);
+        
+    }
+    .swiper-button-prev {
+        left: 30px;
+    }
+    .swiper-button-next {
+        right: 30px;
+    }
+    
+}
+
 .bloc-members {
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
-
+    
     .team-member {
         display: flex;
         flex-direction: column;
-
+        
         &:hover {
             transform: scale(1.1);
         }
@@ -165,16 +169,29 @@
 @media screen and (max-width:990px) {
     .bloc-members {
         flex-direction: column;
-
+        
         .team-img {
             max-height: 230px;
         }
-
+        
         .team-img {
             img {
                 transform: scale(1.5);
             }
         }
+    }
+    .about-swiper {
+        width: 90%;
+        .swiper {
+            padding: 2em 0;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+        }
+        
+    }
+    .swiper-txt {
+        margin-bottom: 1.1em;
     }
 }
 
@@ -184,7 +201,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-
+            
             .img-container-about {
                 width: 60%;
                 margin: 0 auto;

@@ -89,7 +89,10 @@ document.addEventListener('mousemove', (e) => {
         direction: 'horizontal',
         loop: true,
         
-        
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
         
         // Navigation arrows
         navigation: {
@@ -99,8 +102,9 @@ document.addEventListener('mousemove', (e) => {
         
         
     });
-
-
-
-
-
+    
+    
+    
+    
+    
+    
