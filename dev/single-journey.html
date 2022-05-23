@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Journey</title>
 </head>
-                                    <!-- ************* changer class en css ici-->
-<body class="hotel"> 
+<!-- ************* changer class en css ici-->
+
+<body class="single-journey journeys">
     <!-- Overlay ⬛ -->
     <div class="overloff"></div>
     <!-- Burger Menu 🍔 -->
@@ -18,37 +21,39 @@
         <nav class="burger-nav">
             <a href="index.html">home</a>
             <a href="about.html">about us</a>
-            <a href="team.html">our team</a>
-            <a href="journeys.html">our journeys</a>
-            <a href="news.html">our news</a>
-            <a href="contact.html">contact</a>    
+            <a href="team.html">team</a>
+            <a href="journeys.html">journeys</a>
+            <a href="news.html">news</a>
+            <a href="contact.html">contact</a>
         </nav>
     </div>
-    
-    
+
+    <!-- test cursor -->
+    <div class="cursor"></div>
+
     <!-- Header Start 🚗 -->
     <header class="header">
         <div class="wrapper">
             <!-- contenant des deux nav 🧭 -->
             <div class="head-nav">
-                
+
                 <!-- nav liens pages -->
                 <nav class="main-nav">
                     <a href="index.html"><img src="img/favicon.png" alt="Travellusion"></a>
                     <a href="index.html">home</a>
                     <a href="about.html">about us</a>
-                    <a href="team.html">our team</a>
-                    <a href="journeys.html">our journeys</a>
-                    <a href="news.html">our news</a>
-                    <a href="contact.html">contact</a>    
-                    <div class="elBurgerito">
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                    </div>
+                    <a href="team.html">team</a>
+                    <a href="journeys.html">journeys</a>
+                    <a href="news.html">news</a>
+                    <a href="contact.html">contact</a>
+
                 </nav>
             </div>
-            
+            <div class="elBurgerito">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
         </div>
     </header>
     <!--⚠️ main content ⚠️ -->
@@ -57,21 +62,25 @@
             <!-- le text en haut -->
             <div class="section-title">
                 <h2>Kosten</h2>
+                <span class="info-lines"></span>
                 <h3>Andromeda Galaxy</h3>
             </div>
             <!-- L'image de la planète 🌍 -->
-            <div class="img-container img-container-single">
-                <img src="" alt="kosten-planet">
+            <div class="img-container img-container-single planet-container">
             </div>
             <!--1 Première section 🏅-->
-            <section class="section-journey-single journey-description">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus corporis reprehenderit vel at amet sed dignissimos expedita quo ducimus obcaecati, saepe necessitatibus aut. Accusamus similique eveniet cumque eaque quas saepe.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum consequuntur at temporibus molestias atque, corrupti facilis, voluptas necessitatibus, vel amet minus corporis illo nemo fugiat? Tenetur nobis quos ad!</p>
+            <section class="journey-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus corporis reprehenderit vel at amet
+                    sed dignissimos expedita quo ducimus obcaecati, saepe necessitatibus aut. Accusamus similique
+                    eveniet cumque eaque quas saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum consequuntur at temporibus
+                    molestias atque, corrupti facilis, voluptas necessitatibus, vel amet minus corporis illo nemo
+                    fugiat? Tenetur nobis quos ad!</p>
             </section>
             <!-- Section Prix 🤑 et captain 🏴‍☠️ -->
             <section class="section-journey-single journey-price">
-                <article class="single-journey-bloc">
-                    <div class="journey-info">
+                <article class="single-journey-bloc box-25">
+                    <div class="journey-details">
                         <p>Note du voyage</p>
                         <span class="stars">
                             <i class="fa-solid fa-star"></i>
@@ -81,95 +90,194 @@
                             <i class="fa-solid fa-star star-grey"></i>
                         </span>
                     </div>
-                    <div class="journey-info">
+                    <span class="info-lines"></span>
+                    <div class="journey-details journey-duree">
                         <p>Durée du voyage</p>
-                        <p>11 jours</p>
+                        <p>234 jours</p>
                     </div>
-                    <div class="journey-info">
-                        <p>A partir de</p>
-                        <p>15000 Crédits</p>
+                    <span class="info-lines"></span>
+                    <div class="journey-details journey-duree">
+                        <p>Vaisseau</p>
+                        <p>Le Watergate</p>
+                    </div>
+                    <span class="info-lines"></span>
+                    <div class="journey-details journey-duree">
+                        <p>Hébergement</p>
+                        <p>Îles hotels</p>
+                    </div>
+                    <span class="info-lines"></span>
+                    <div class="journey-details journey-duree">
+                        <p>Internet</p>
+                        <p>Pas de connexion</p>
+                    </div>
+                    <span class="info-lines"></span>
+                    <div class="journey-details journey-price">
+                        <p>Prix</p>
+                        <p>12500 Credits </p>
                     </div>
                 </article>
-                <article class="single-journey-bloc">
-                    <div>
-                        <img src="" alt="kosten-swiper">
+                <!-- Captain -->
+                <article class="single-journey-bloc box-25">
+                    <div class="img-container">
+                        <img src="img/alien1.webp" alt="kosten-swiper">
                     </div>
-                    <div>
+                    <div class="journey-captain">
                         <p>Excursion présentée par</p>
                         <h4>Kevin Gristom</h4>
                         <a href="#" class="btn">Know me more</a>
                     </div>
                 </article>
             </section>
+            <!-- end prix et captain& -->
+            <!-- Swiper ◀️ ▶️ -->
+            <section class="journey-swiper">
+                <!-- <img src="img/planete-cercle-bleu.jpg" alt=""> -->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/planete-cercle-bleu.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/astronomy-g93710ea3d_1920.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/planete-cercle-bleu.jpg" alt=""></div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+                
+            </section>
         </div>
-        <!-- Swiper ◀️ ▶️ -->
-        <section class="section-journey-single journey-swiper">
-            <img src="" alt="">
-        </section>
 
-        </main>
 
-        
-<!-- FOOTER -->
-        <!-- Ici le footer 🦶 -->
-        <footer class="footer sect">
-            <div class="wrapper">
-                <!-- prmeière partie du footer ⏫-->
-                <div class="top-foot">
-                    <!-- agency 👍-->
-                    <div class="foot-bloc">
-                        <h4>about agency</h4>
-                        <p>The first travel agency excusively destinate to aliens.</p>
-                    </div>
-                    <!-- navigation 🧭 -->
-                    <div class="foot-bloc">
-                        <h4>navigation links</h4>
-                        <nav class="foot-links">
-                            <a href="index.html">Home</a>
-                            <a href="#">Feature</a>
-                            <a href="#">Our Journeys</a>
-                            <a href="#">Portfolio</a>
-                        </nav>
-                        <nav class="foot-links">
-                            <a href="#">Our Team</a>
-                            <a href="news.html">Our News</a>
-                            <a href="contact.html">Contact</a>
-                        </nav>
-                    </div>
-                    <!-- newsletter 💌-->
-                    <div class="foot-bloc">
-                        <h4>newsletter</h4>
-                        <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
-                        <div class="foot-inputs">
-                            <input type="email" value="blablabla@dhfgjd.eu" class="foot-input">
-                            <button type="submit" class="btn"><i class="fa-regular fa-paper-plane"></i></button>
-                            
-                        </div>
-                    </div>
-                    <!-- insta 📱-->
-                    <div class="foot-bloc">
-                        <h4>astrafeed</h4>
-                        <div class="foot-gallery">
-                            <a href="#"><img src="img/travtest.jpeg" alt="child" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="house" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="person" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="taj-mahal" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="suitcase" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="sunset" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="person" class="gallery-img"></a>
-                            <a href="#"><img src="img/travtest.jpeg" alt="child" class="gallery-img"></a>
-                            
-                        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <!-- Ici le footer 🦶 -->
+    <footer class="footer sect">
+        <div class="wrapper">
+            <!-- prmeière partie du footer ⏫-->
+            <div class="top-foot">
+                <!-- agency 👍-->
+                <div class="foot-bloc">
+                    <h4>about agency</h4>
+                    <p>The first travel agency excusively destinate to aliens.</p>
+                </div>
+                <!-- navigation 🧭 -->
+                <div class="foot-bloc">
+                    <h4>navigation links</h4>
+                    <nav class="foot-links">
+                        <a href="index.html">Home</a>
+                        <a href="#">Feature</a>
+                        <a href="#">Journeys</a>
+                        <a href="#">Portfolio</a>
+                    </nav>
+                    <nav class="foot-links">
+                        <a href="#">Team</a>
+                        <a href="news.html">News</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <!-- newsletter 💌-->
+                <div class="foot-bloc">
+                    <h4>newsletter</h4>
+                    <p>Neptune Is Cooler Than We Thought</p>
+                    <div class="foot-inputs">
+                        <input type="email" value="*****@***.space" class="foot-input">
+                        <button type="submit" class="btn btn2"><i class="fa-regular fa-paper-plane"></i></button>
+
                     </div>
                 </div>
-                <!-- Partie bas du footer ⏬ -->
-                <div class="bottom-foot">
-                    <p>
-                        Copyright © 2RX4556F All rights reserved | This template is made with <i class="fa-regular fa-heart"></i>
-                    </p>
+                <!-- insta 📱-->
+                <div class="foot-bloc">
+                    <h4>astrafeed</h4>
+                    <div class="foot-gallery">
+                        <a href="#"><img src="img/travtest.jpeg" alt="child" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="house" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="person" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="taj-mahal" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="suitcase" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="sunset" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="person" class="gallery-img"></a>
+                        <a href="#"><img src="img/travtest.jpeg" alt="child" class="gallery-img"></a>
+
+                    </div>
                 </div>
             </div>
-        </footer>
-        <script src="js/main.min.js"></script>
-    </body>
-    </html>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/three.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <script type="module">
+        
+        import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
+        
+        
+
+        function init(){
+            const bgColour = {
+                color: '#000000'
+            };
+            
+            let container = document.querySelector('.planet-container');
+            let containerHeight = container.offsetHeight;
+            let containerwidth = container.clientWidth;
+            
+            const scene = new THREE.Scene({ alpha: true }); // add alpha :true to allow alpha
+            const camera = new THREE.PerspectiveCamera( 30, containerwidth / containerHeight, 0.1, 1000 );
+            
+            const texture = new THREE.TextureLoader().load( 'img/ecumenopolis.png' );
+            texture.offset.set(0, .02);
+            
+            const renderer = new THREE.WebGLRenderer();
+            // set background as transparent
+            renderer.setClearColor(0xffffff, 0);
+            
+            renderer.setSize( containerwidth, containerHeight );
+            container.appendChild( renderer.domElement );
+            
+            const geometry = new THREE.SphereGeometry(1, 64, 64);
+            const material = new THREE.MeshBasicMaterial( { map: texture } );
+            
+            const sphere = new THREE.Mesh( geometry, material );
+            scene.add( sphere );
+            
+            // enable controls
+            const controls = new OrbitControls( camera, renderer.domElement );
+            // disable zoom 
+            controls.enableZoom = false;
+            controls.keys = false;
+            camera.position.z = 5;
+            
+            window.addEventListener("resize", onWindowResize, false)
+            
+            function animate() {
+                requestAnimationFrame( animate );
+                sphere.rotation.y += 0.005;
+                renderer.render( scene, camera );
+            }
+            animate();
+            
+        }
+        init();
+        
+        function onWindowResize() {
+            camera.aspect=container.innerWidth / container.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.innerWidth, container.innerHeight)
+        }
+        
+        
+        
+        
+    </script>
+</body>
+
+</html>

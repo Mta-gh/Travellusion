@@ -1,8 +1,21 @@
+* {
+  cursor: none;
+  margin:0;
+  padding:0;
+}
+
 .head-nav {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     z-index: 5;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000017, -1px -1px 2px #ffffff63, 1px 1px 2px #5555556b;
+    backdrop-filter: blur(5px);
+    @media screen and (max-width: 768px) {
+    display: none;}
+    
     .top-nav, .main-nav {
         display: flex;
         align-items: center;
@@ -22,10 +35,10 @@
     }
     .main-nav {
         padding: 15px;
-        border-bottom: 2px solid black;
         a {
             text-transform: uppercase;
             margin-left: 20px;
+            
         }
         a:nth-of-type(1) {
             margin-right: auto;
@@ -35,13 +48,14 @@
 }
 
 .elBurgerito {
+    position: absolute;
     display: none;
     width: 30px;
     height: 40px;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    margin-left: 30px;
+    right: 5%;
     cursor: pointer;
     .burger-line {
         background: $white;
@@ -61,9 +75,11 @@
 // menu popup mobile
 .burger-popup{
     height: 100vh;
-    width: 40vw;
+    width: 70vw;
     position: fixed;
-    background-color: #000000;
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
     left: -100%;
     transition:all 0.5s ease-in-out;
     z-index: 222;
@@ -74,7 +90,7 @@
         gap: 2em;
     }
     a {
-        color: $white;
+        color: pink;
         text-transform: uppercase;
         font-size: 1.2em;
     }
@@ -83,9 +99,11 @@
 .active {
     left: 0;
     transition:all $transition;
+
     .burger-line {
         position: fixed;
         width: 30px;
+        right: 5%;
     }
     .burger-line:nth-of-type(1) {
         transform: rotate(45deg);
@@ -123,6 +141,7 @@
 @media screen and (max-width: 768px) {
     .elBurgerito {
         display: flex;
+        z-index: 88888;
     }
     .nav-links {
         display: none;
@@ -142,5 +161,28 @@
             
         }
     }
+}
+
+
+//Cursor test1//
+.cursor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1999;
+    top: var(--y);
+    left: var(--x);
+    right: 0;
+    bottom: 0; 
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(.7);
+    transition: transform .2s ease-in-out;
+    background:rgb(101, 0, 119);
+    mix-blend-mode: difference;
+}
+
+.cursor.enlarged {
+  transform: translate(-50%,-50%) scale(1.3);
 }
 

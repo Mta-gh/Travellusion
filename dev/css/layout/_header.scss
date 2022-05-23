@@ -1,8 +1,8 @@
 .header {
-    background: rgb(49,193,151);
-    background: linear-gradient(0deg, rgba(49,193,151,1) 28%, rgba(215,113,192,1) 92%);
+    -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    background: $holographic;
     height: 100vh;
-    color: $white;
+    color: #000;
     position: relative;
     
     .wrapper {
@@ -11,14 +11,17 @@
         height: 100%;
     }
     a, p {
-        color: white;
+        color: #000;
         
     }
     span {
-        font-size: 1rem;
-        text-transform: uppercase;
+        font-size: 4rem;
+        // text-transform: uppercase;
         font-weight: 300;
+        color: white;
+        text-shadow: 0 0 5px rgba(255,255,255,.8);
     }
+    
     // Le titre
     .head-txt {
         width: 50%;
@@ -36,30 +39,48 @@
             }
         }
     }
-    .btn {
+    .btn3 {
         margin-top: 1rem;
     }
 }
 
 a:hover {
-    color: $yellow;
+    color: $blue;
     transition: all $transition;
 }
 
 .home .header {
-    background: linear-gradient(359deg, #7fffd4, #d1d1d1);
-    background-size: 400% 400%;
+    background: none;
+    -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
 
-    -webkit-animation: AnimatedGradient 17s ease infinite;
-    -moz-animation: AnimatedGradient 17s ease infinite;
-    animation: AnimatedGradient 17s ease infinite;
-
+    .head-txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        
+    }
+    h1 {
+        font-size: calc(10em + 10%);
+        color: $white;
+        text-shadow: 0 0 8px rgba(255,255,255,.8);
+    }
+    
+}
+.home {
+    .head-nav {
+        display: none;
+    }
+    a {
+        color: $white;
+    }
 }
 
 // Pour les autres pages
 
-.contact, .team, .news, .journey, .about {
-    background-color: rgb(250, 250, 255);
+.contact, .team, .news, .journeys, .about, .error {
+    background-color: #e3e3e3;
     .header {
         height: 35vh;
         @media screen and (max-width: 768px) {

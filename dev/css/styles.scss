@@ -5,6 +5,9 @@
 @import "helpers/mixins";
 
 @import "components/buttons";
+@import "components/box";
+@import "components/swiper";
+
 
 @import "layout/general";
 @import "layout/header";
@@ -14,13 +17,14 @@
 
 @import "pages/home";
 @import "pages/contact";
+@import "pages/about";
+
 @import "pages/team";
 @import "pages/single-team";
 
+@import "pages/journey";
 
-@import "pages/blog";
-@import "pages/hotels";
+
 @import "pages/news";
 @import "pages/single-news";
-@import "pages/journey";
 
