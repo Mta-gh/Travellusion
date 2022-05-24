@@ -44,8 +44,18 @@
     }
     .stars {
         margin-bottom: 2em;
+        
     }
 }
+.article-journeys .stars{
+    .fa-solid{
+            color: rgb(180, 179, 179);
+        }
+    .checked{
+            color: aquamarine;
+            text-shadow : 0 0 2px $foot-txt ;
+        }
+    }
 
 .journey-details {
     display: flex;
