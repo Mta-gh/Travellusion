@@ -109,10 +109,10 @@
     justify-content: center;
     gap: 50px;
     align-items: center;
-    
     .team-member {
         display: flex;
         flex-direction: column;
+    transition: all .3s ease-in-out;
         
         &:hover {
             transform: scale(1.1);
