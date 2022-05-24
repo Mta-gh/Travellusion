@@ -109,17 +109,13 @@ a:hover {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-weight: 300;
-
-    
+        font-weight: 300;  
         @media screen and (max-width: 1140px) {
             text-align: justify;
-      
+        }
     }
-    
-    
-      }
 }
+
 
 
 

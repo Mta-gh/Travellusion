@@ -58,28 +58,7 @@
         margin-top: 5em;
     }
     
-    // Responsive 
-    @media screen and (max-width: 767px) {
-        .sect-txt {
-            width: 80%;
-            
-            display: flex;
-            flex-direction: column;
-            
-            .title-sect {
-                width: 100%;
-                padding: 20px;
-            }
-            .img-container-about {
-                width: 100%;
-                margin-left: 10%;
-                
-                margin-bottom: 80px;
-                
-            }
-            
-        }
-    }
+
 }
 
 // swiper
@@ -170,8 +149,8 @@
     }
 }
 
-
 @media screen and (max-width:990px) {
+
     .bloc-members {
         flex-direction: column;
         
