@@ -9,6 +9,13 @@
     }
 }
 
+.journey-introduction-txt {
+    margin: 2em 0;
+    strong {
+        line-height: 3em;
+    }
+}
+
 .article-journeys {
     min-height: 750px;
     transition: $transition;
@@ -212,5 +219,8 @@
             overflow: hidden;
             
         }
+    }
+    .journey-swiper {
+        margin-top: 45px;
     }
 }
