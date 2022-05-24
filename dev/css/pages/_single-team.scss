@@ -7,7 +7,6 @@
         margin: 5% auto;
         width: 60%;
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
         gap: 2em;
         transition: box-shadow $transition;
 
@@ -41,7 +40,7 @@
     }
 
     .team-img{
-        margin: 0 auto;
+        margin: 0 auto 5%;
         width: 450px;
         height: 450px;
         border-radius: 0px 200px 0 200px;
