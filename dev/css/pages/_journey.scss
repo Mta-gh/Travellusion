@@ -3,12 +3,12 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap : 2rem;
-    // padding-bottom: 8em;
     a:hover{
         color: $black-txt
     }
 }
 
+// Petit paragraphe d'intro
 .journey-introduction-txt {
     margin: 2em 0;
     strong {
@@ -16,6 +16,7 @@
     }
 }
 
+// Les blocs de chaque journey
 .article-journeys {
     min-height: 750px;
     transition: $transition;
@@ -54,13 +55,13 @@
     }
 }
 
+// les infos de chaque journey
 .journey-details {
     display: flex;
     width: 100%;
     height: 25px;
     justify-content: space-between;
     align-items: center;
-
 
     p {
         font-family: 'Syne', sans-serif;
@@ -135,6 +136,7 @@
             
         }
     }
+    // l'agent lié
     .journey-captain {
         display: flex;
         flex-direction: column;
