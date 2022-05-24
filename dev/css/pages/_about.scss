@@ -8,11 +8,16 @@
         align-items: center;
         gap: 5%;
         position: relative;
-        
         .section-title {
             width: 70%;
+
         }
-        
+        h2 {
+            margin-bottom: 1em;
+        }
+        p {
+        text-align: left;
+        }
         .img-container-about {
             align-self: flex-start;
             justify-self: flex-start;
