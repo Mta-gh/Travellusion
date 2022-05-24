@@ -18,6 +18,7 @@
 
 .home {
     overflow: hidden;
+    // Pour la nebula
     canvas {
         position: absolute;
         top: 0;
@@ -39,6 +40,7 @@
         box-shadow: 5px 5px 10px #49494917,-1px -1px 4px #ffffff8c,1px 1px 2px #5555552a;
     }
     
+    // La nav qui apparait onclick
     .planet-nav {
         display: flex;
         flex-direction: column;
@@ -80,7 +82,7 @@
         transition-delay: 1s;
         opacity: 1;
     }
-    
+    // Les petites planètes
     .home-link {
         display: flex;
         flex-direction: column;
@@ -152,11 +154,10 @@
     
     
     .home-link:hover .planet-link {
-        /* background-color: white; */
-        /* box-shadow: 0 0 10px white; */
         box-shadow: inset 10px 1px 13px aquamarine, inset 150px 1px 13px white, 0 0 15px white;
-        
     }
+
+
     @media screen and (max-width: 768px) {
         .active-h2 {
             font-size: 1em;
