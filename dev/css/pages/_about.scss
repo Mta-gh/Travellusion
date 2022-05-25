@@ -14,45 +14,12 @@
         }
         h2 {
             margin-bottom: 1em;
+            text-align: left;
         }
         p {
         text-align: left;
         }
-        .img-container-about {
-            align-self: flex-start;
-            justify-self: flex-start;
-            position: relative;
-            height: 300px;
-            
-            .img-about {
-                position: absolute;
-                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            }
-            
-            .img-about:nth-of-type(1) {
-                top: 2rem;
-                left: 5rem;
-                width: 140px;
-                height: 140px;
-                background: url(../img/planete-cercle-bleu.jpg) center/cover;
-            }
-            
-            .img-about:nth-of-type(2) {
-                top: 8.2rem;
-                left: 9.5rem;
-                width: 180px;
-                height: 180px;
-                background: url(../img/depositphotos_7689364-stock-photo-ringed-planet.jpg) center/cover;
-            }
-            
-            .img-about:nth-of-type(3) {
-                top: 9.1rem;
-                left: 1.7rem;
-                width: 120px;
-                height: 120px;
-                background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-            }
-        }
+
     }
     .sect-about {
         margin-top: 5em;
