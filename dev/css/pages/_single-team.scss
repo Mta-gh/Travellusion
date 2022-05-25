@@ -62,27 +62,51 @@
     }
 
     .team-proposal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 5% auto;
         width: 60%;
-        h5{
+        h4{
             padding-bottom: 3rem;
+            
         }
     }
 
     .travel-link-team {
         display: flex;
-        gap: 2em;
-        transition: box-shadow $transition;
+        gap: 3.5rem;
     }
 
     .travel-link {
+        position: relative;
+        overflow: hidden;
         margin: 0 auto;
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background: rgb(49, 193, 151);
-        background: linear-gradient(0deg, rgba(49, 193, 151, 1) 28%, rgba(215, 113, 192, 1) 92%);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        &:nth-of-type(1){
+            animation: 6.8s infinite alternate floating;
+        }
+        &:nth-of-type(2){
+            animation: floating2 3.8s infinite alternate;
+        }
+        &:nth-of-type(3){
+            animation: 7.8s infinite alternate floating;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
+    .box-shadow {
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+    }
+    .box-shadow:hover {
+    box-shadow: 0px 5px 15px 15px #FFFFFF;
+}
 
 }
 

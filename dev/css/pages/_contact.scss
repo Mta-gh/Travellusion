@@ -6,7 +6,7 @@
         }
         // Contact
         .contact-form {
-            max-width: 900px;
+            max-width: 100%;
             align-items: self-start;
             padding: 3rem;
             flex-grow: 1;
@@ -51,7 +51,8 @@
                 border-color: transparent;
             }
             .form-control::placeholder{
-                color: $color7;
+                color: #78caafbe;
+                text-shadow: 1px 0px 1px rgba(255,255,255,0.95);
                 opacity: .7;
             }
             .form-control:focus{
@@ -81,7 +82,8 @@
             margin-bottom: 0;
         }
         i {
-            color: $blue;
+            color: #7fffd4;
+            text-shadow: 1px 0px 1px rgba(255,255,255,0.95);
             font-size: 2.5em;
             margin-right: 30px;
         }
