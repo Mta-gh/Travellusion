@@ -103,6 +103,7 @@ a:hover {
     background-color: #e3e3e3;
     .header {
         height: 35vh;
+        padding-bottom: 6vh;
         @media screen and (max-width: 768px) {
             height: 20vh;
         }
