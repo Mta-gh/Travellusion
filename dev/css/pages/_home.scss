@@ -107,37 +107,36 @@
     }
     
     
-    .home-link1 {
-        animation: floating2 3.8s infinite alternate;
-        top: -80px;
-        left: -400px;
-        
-        
-    }
-    
-    .home-link2 {
-        animation: 5.3s infinite alternate floating;
-        bottom: -350px;
-        left: -250px;
-    }
-    
-    .home-link3 {
-        animation: 7.8s infinite alternate floating;
-        top: -350px;
-        left: -55px;
-    }
-    
-    .home-link4 {
-        animation: 6.8s infinite alternate floating;
-        top: -80px;
-        right: -400px;
-    }
-    
-    .home-link5 {
-        animation: 4.8s infinite alternate floating;
-        bottom: -350px;
-        right: -250px;
-    }
+// about
+.home-link1 {
+    animation: floating2 3.8s infinite alternate;
+    top: -13vh;
+    right: 20vw;
+}
+// team
+.home-link2 {
+    animation: 5.3s infinite alternate floating;
+    top: 15vh;
+    right: 7vw;
+}
+// journey
+.home-link3 {
+    animation: 7.8s infinite alternate floating;
+    top: -40vh;
+    right: -5vh;
+}
+// news
+.home-link4 {
+    animation: 6.8s infinite alternate floating;
+    top: -13vh;
+    left: 20vw;
+}
+// contact
+.home-link5 {
+    animation: 4.8s infinite alternate floating;
+    top: 15vh;
+    left: 7vw;
+}
     
     
     .planet-link {
@@ -156,11 +155,15 @@
     .home-link:hover .planet-link {
         box-shadow: inset 10px 1px 13px aquamarine, inset 150px 1px 13px white, 0 0 15px white;
     }
+    @media screen and (max-width: 1140px) {
+        .active-h2 {
+            font-size: 1.5em;
 
+        }}
 
     @media screen and (max-width: 768px) {
         .active-h2 {
-            font-size: 1em;
+            font-size: 0.7em;
             box-shadow: none;
             display: none;
         }

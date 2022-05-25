@@ -66,6 +66,16 @@ a:hover {
         color: $white;
         text-shadow: 0 0 8px rgba(255,255,255,.8);
     }
+    @media screen and (max-width: 1140px) {
+        h1 {
+            font-size: 6em;
+            text-shadow: 0 0 4px rgba(255,255,255,.8);
+        }
+        span {
+            font-size: 3em;
+        }
+       
+    }
     @media screen and (max-width: 768px) {
         h1 {
             font-size: 3em;
