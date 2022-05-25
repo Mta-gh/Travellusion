@@ -1,6 +1,6 @@
 ### Recap branchs de chacun (supprimer cette partie à la fin)
-Mathias Branch + Working on Journeys/single journeys & home page + javascript
-
+ - Mathias Branch + Working on Journeys/single journeys & home page + javascript
+__________________________________________________________________________
 
 <img src="https://media.giphy.com/media/UbGeaG4oy5sqSHNhc6/giphy-downsized-large.gif" width="300" align="center" />
 
