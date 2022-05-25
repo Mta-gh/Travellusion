@@ -23,8 +23,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
+    
+    
     h3{
         margin: 0;
         text-align: center;
@@ -41,11 +41,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
+        
         .journey-description {
             padding: 2em 0;
         }
-
+        
     }
     .btn {
         margin-top: 3em;
@@ -57,13 +57,13 @@
 }
 .article-journeys .stars, .journey-details .stars{
     .fa-solid{
-            color: rgb(180, 179, 179);
-        }
-    .checked{
-            color: aquamarine;
-            text-shadow : 0 0 2px $foot-txt ;
-        }
+        color: rgb(180, 179, 179);
     }
+    .checked{
+        color: aquamarine;
+        text-shadow : 0 0 2px $foot-txt ;
+    }
+}
 
 // les infos de chaque journey
 .journey-details {
@@ -72,7 +72,7 @@
     height: 2.5em;
     justify-content: space-between;
     align-items: center;
-
+    
     p {
         font-family: 'Syne', sans-serif;
         font-weight: 700;
@@ -88,7 +88,7 @@
     height: 1px;
     background-color: $black-txt;
     box-shadow : 0 0 3px rgba(0, 0, 0, 0.8);
-
+    
 }
 
 // link to contact
@@ -109,10 +109,10 @@
         }
     }
     .journey-contact-img {
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 5px 5px 8px #49494952, -1px -1px 6px #ffffff, 1px 1px 2px #5555559c;
-
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 5px 5px 8px #49494952, -1px -1px 6px #ffffff, 1px 1px 2px #5555559c;
+        
     }
 }
 
@@ -123,7 +123,7 @@
     .header{
         height: 15vh;
     }
-
+    
     .section-title {
         display: flex;
         justify-content: space-between;
@@ -138,7 +138,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
     }
     .journey-description {
         width: 90%;
@@ -157,16 +157,22 @@
         }
     }
     .single-journey-bloc .img-container{
+        @media screen and (max-width:990px) and (min-width:769px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
         img {
             width: 100%;
-
-            @media screen and (min-width:990px) {
-                // height: 100%; /*un height de 100 et un width de 100 ça déforme l'image*/
+            margin: 0 auto;
+            @media screen and (max-width:990px) and (min-width:769px){
+                height: 100%; /*un height de 100 et un width de 100 ça déforme l'image*/
+                max-width: none;
+                width: auto;
             }  
-
+            
             @media screen and (max-width: 768px) {
-            width: 100%;
-                // height: 100%; /*un height de 100 et un width de 100 ça déforme l'image*/
+                width: 100%;
             }
         }
     }
@@ -214,7 +220,7 @@
     border-radius: 25px;
     overflow: hidden;
     aspect-ratio: 16 / 9;
-
+    
     img {
         display: block;
     }
@@ -247,33 +253,33 @@
 
 @media screen and (max-width: 768px) {
     .journey-description {
-       font-size: 0.8rem;
+        font-size: 0.8rem;
     }
     .journey-details {
         p {
             font-size: 0.7rem;
-             }
         }
     }
+}
 
 @media screen and (max-width: 768px) {
-
+    
     .section-journeys-blocs {
-            display: flex;
-            flex-direction: column;    
+        display: flex;
+        flex-direction: column;    
     }
-
+    
     .section-journey-single {
-            display: flex;
-            flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     .planet-container {
         height: 40vh;
-        }
+    }
     
     .article-journeys {
         min-height: 450px;
-
+        
     }
     .single-journey .single-journey-bloc:nth-of-type(2) {
         padding: 0;
