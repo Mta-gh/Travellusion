@@ -1,4 +1,4 @@
-## Mathias Branch
+### Mathias Branch
 Working on Journeys & home page + javascript
 
 
