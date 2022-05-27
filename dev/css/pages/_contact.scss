@@ -51,6 +51,8 @@
                 border-radius: 20px 0;
                 cursor: cell;
                 border-color: transparent;
+                -webkit-appearance: none;
+
             }
             .form-control::placeholder{
                 color: #78caafbe;
