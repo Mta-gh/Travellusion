@@ -7,55 +7,23 @@
         display: flex;
         align-items: center;
         gap: 5%;
-        position: relative;
         .section-title {
             width: 70%;
-
         }
         h2 {
             margin-bottom: 1em;
+            text-align: left;
         }
         p {
         text-align: left;
         }
-        .img-container-about {
-            align-self: flex-start;
-            justify-self: flex-start;
-            position: relative;
-            height: 300px;
-            
-            .img-about {
-                position: absolute;
-                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            }
-            
-            .img-about:nth-of-type(1) {
-                top: 2rem;
-                left: 5rem;
-                width: 140px;
-                height: 140px;
-                background: url(../img/planete-cercle-bleu.jpg) center/cover;
-            }
-            
-            .img-about:nth-of-type(2) {
-                top: 8.2rem;
-                left: 9.5rem;
-                width: 180px;
-                height: 180px;
-                background: url(../img/depositphotos_7689364-stock-photo-ringed-planet.jpg) center/cover;
-            }
-            
-            .img-about:nth-of-type(3) {
-                top: 9.1rem;
-                left: 1.7rem;
-                width: 120px;
-                height: 120px;
-                background: url(../img/astronomy-g93710ea3d_1920.jpg) center/cover;
-            }
-        }
+
     }
     .sect-about {
         margin-top: 5em;
+    }
+    .img-container-about{
+        text-align: center;
     }
     
 
@@ -65,17 +33,22 @@
 
 .about-swiper {
     width: 50%;
+
     .swiper {
         padding: 3em 4em 4em;
+        text-align: center;
+
     }
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+
+        height: 100%;
     }
     .swiper-txt {
         width: 70%;
+        height: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -83,8 +56,8 @@
     .img-container {
         border-radius: 50%;
         overflow: hidden;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         margin-bottom: 1.5em;
         box-shadow: 0 0 8px rgb(0 0 0 / 30%);
         
