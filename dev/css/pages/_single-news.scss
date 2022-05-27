@@ -83,9 +83,14 @@
 }
 
 .archives {
+    .header{
+        height: 15vh;
+    }
     .news-content {
         margin: 5vh auto;
-    }
+        .news-article{
+        border-bottom: none;
+    }}
 }
 
 @media screen and (max-width: 768px) {

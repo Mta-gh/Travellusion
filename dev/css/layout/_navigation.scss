@@ -76,11 +76,11 @@
     // menu popup mobile
     .burger-popup{
         height: 100vh;
-        width: 70vw;
+        width: 60vw;
+        font-family: 'Syne', sans-serif;
         position: fixed;
         background-color: #FFDEE9;
         background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-        
         left: -100%;
         transition:all 0.5s ease-in-out;
         z-index: 222;
@@ -92,8 +92,8 @@
         }
         a {
             color: pink;
-            text-transform: uppercase;
-            font-size: 2em;
+            // text-transform: uppercase;
+            font-size: 1.5em;
         }
     }
     
