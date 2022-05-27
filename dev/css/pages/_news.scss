@@ -1,24 +1,23 @@
 .news {
-
     .main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding-top: 60px;
-
-        @media screen and (max-width: 1170px) {
-            display: flex;
-            flex-direction: column;
-        }
+        display: flex;
+        gap: 3%;
+        padding-top: 50px;
     }
 
 }
 
 // Main content
 .news-content {
+    width: 70%;
     padding: 0 3em;
 
-    .news-article {
+    h2 {
         text-align: center;
+    }
+
+    .news-article {
+        text-align: justify;
         border-bottom: 1px solid $black-txt;
         box-shadow: 0 5px 10px -13px rgb(0 0 0 / 80%), inset 0 -5px 10px -12px rgb(0 0 0 / 80%);
         padding: 3em;
@@ -30,8 +29,8 @@
     }
 
     .img-container-news {
-        max-width: 600px;
-        height: 200px;
+        max-width: 500px;
+        height: 190px;
         margin: 50px auto;
         border-top-left-radius: 550px 550px;
         border-top-right-radius: 200% 100%;
@@ -43,8 +42,6 @@
 
         img {
             width: 100%;
-            transform: translateY(-40px);
-
         }
     }
 }
@@ -53,65 +50,62 @@
 
 // Side Bar
 .news-right {
+    width: 30%;
     padding: 0 3em 3em;
-    margin-left: 2em;
     height: fit-content;
 
     h3 {
         margin: 0;
-        
     }
-
 
     .btn {
         text-align: center;
         text-transform: capitalize;
         margin: 3em 0 2em;
         background: aquamarine;
+
         &:hover {
-    border-radius: 8px 0 8px 0;
+            border-radius: 8px 0 8px 0;
 
         }
     }
 }
 
 
-
-
-// 1st Part
+// sidebar
 .news-categories {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 3em;
-    
 
+    // latest news
     .popular-links {
         display: flex;
-        height: 50px;
-        justify-content: flex-start;
-        align-content: center;
-        gap: 2rem;
-img{
-    width: 70px;
+        gap: 1rem;
+        padding-bottom: 1em;
 
-}
+        img {
+            width: 70px;
+            height: 50px;
+        }
+
         .content {
+            width: 70%;
             align-self: flex-start;
         }
 
         h4 {
-            font-size: .9em;
-            margin: 10px 0 0 0;
+            font-size: .8em;
+            margin: 0;
         }
 
         p {
-            font-size: .8em;
+            font-size: .7em;
             margin: 5px 0 10px;
         }
     }
 
-    // 2nd Part
+    // category
     .categories {
         border-bottom: 1px dotted $black-txt;
 
@@ -126,55 +120,62 @@ img{
 }
 
 .news-categories:last-of-type h4 {
-    
-        padding-bottom: 1em;
-    
+    padding: 3em 0 1em;
 }
 
-// .news-categories:nth-of-type(2) {
-//     border-top: 1px solid $black-txt;
-// }
 
-// Responsive
+// RESPONSIVE 
+
 // Intermediate
-@media screen and (max-width: 1170px) {
-    .news-content img {
-        width: 100%;
-    }
+@media screen and (max-width: 1140px) {
 
-    .news-content {
-        margin-bottom: 45px;
-    }
+    .popular-links {
 
-    .news-right {
-        margin-left: 0;
+        h4 {
+            font-size: .5rem;
+        }
     }
 }
 
-// Mobile
-@media screen and (max-width: 768px) {
+// palié intermediaire
+@media screen and (max-width: 900px) {
 
-    // Tout flexer
-    .article-content {
+    // flex column all
+    .main {
         display: flex;
         flex-direction: column;
-    }
 
-    .article-nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-
-        .categories {
-            grid-column: span 2;
+        // left 
+        .news-content {
+            margin-bottom: 5%;
+            width: 100%;
         }
 
-        .categories {
-            justify-content: flex-start;
+        // Side Bar
+        .news-right {
+            width: 100%;
         }
     }
 
-    .news-right img {
-        width: auto;
+}
+
+// mobile
+@media screen and (max-width: 768px) {
+
+    .news-content .news-article {
+        padding: 3em 0;
     }
+
+    .news-content .img-container-news {
+        max-width: 300px;
+
+        margin: 20px auto;
+        border-radius: 50% 100%;
+
+        img {
+
+            height: 100%;
+        }
+    }
+
 }
