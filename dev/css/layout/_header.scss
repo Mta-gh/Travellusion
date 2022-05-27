@@ -34,7 +34,7 @@
         @media screen and (max-width: 768px) {
             width: 100%;
             h1 {
-                font-size: 3em;
+                font-size: 2.5em;
             }
         }
     }
@@ -78,7 +78,7 @@ a:hover {
     }
     @media screen and (max-width: 768px) {
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             text-shadow: 0 0 4px rgba(255,255,255,.8);
         }
         span {
@@ -102,8 +102,8 @@ a:hover {
 .contact, .team, .news, .journeys, .about, .error {
     background-color: #e3e3e3;
     .header {
-        height: 35vh;
-        padding-bottom: 6vh;
+        height: 40vh;
+        // padding-bottom: 6vh;
         @media screen and (max-width: 768px) {
             height: 20vh;
         }
@@ -125,6 +125,12 @@ a:hover {
             text-align: justify;
         }
     }
+    @media screen and (max-width: 1140px) {
+        main.main{
+            padding-top: 0;
+        }
+    }
+
 }
 
 
