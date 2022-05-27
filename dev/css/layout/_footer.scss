@@ -133,9 +133,14 @@
     }
         }
 
-.gallery-img:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+
+.gallery-img {
+    transition: $transition;
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    }
 }
+
 
 // RESPONSIVE
 @media screen and (max-width: 1140px) {
