@@ -1,5 +1,6 @@
 .btn {
-    background-color: aquamarine;
+    background-color: $black-txt;
+
     padding: 13px 23px ;
     color: $white;
     text-transform: uppercase;
@@ -9,9 +10,9 @@
     border-radius: 8px 0 8px 0;
     border: none;
     &:hover {
-        background-color: $black-txt;
         color: $white;
     border-radius: 8px;
+    background-color: aquamarine;
 
     }
     @media screen and (max-width: 768px) {

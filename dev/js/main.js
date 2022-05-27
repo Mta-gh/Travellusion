@@ -22,28 +22,6 @@ overlay.addEventListener('click', function() {
     overlay.classList.toggle("overlon");
 });
 
-
-// Sticky Nav
-let headNav = document.querySelector('.head-nav');
-let theTop = 0;
-let hidePoint = 300
-
-document.addEventListener('scroll', () => {
-    let top = document.documentElement.scrollTop;
-    if (theTop < top) {
-        headNav.classList.remove('sticky');
-    } 
-    // Point à partir du moment duquel la nav se remet a sa place de départ
-    else if (top < hidePoint) {
-        headNav.classList.remove('sticky');
-    }
-    else {
-        headNav.classList.add('sticky');
-    }
-    theTop = top;
-}
-);
-
 //////////////////Cursor TEST//
 document.onmousemove = function (e) {
     document.body.style.setProperty('--x', e.pageX + 'px');
