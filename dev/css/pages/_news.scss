@@ -69,6 +69,12 @@
 
         }
     }
+    .foot-bloc{
+        padding: 2em 0;
+        h4{
+            padding: 1em 0;
+        }
+    }
 }
 
 
@@ -103,6 +109,7 @@
             font-size: .7em;
             margin: 5px 0 10px;
         }
+
     }
 
     // category
@@ -117,11 +124,10 @@
             color: $blue;
         }
     }
+    
 }
 
-.news-categories:last-of-type h4 {
-    padding: 3em 0 1em;
-}
+
 
 
 // RESPONSIVE 
