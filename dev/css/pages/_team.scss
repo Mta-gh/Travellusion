@@ -135,4 +135,19 @@
         }
         }
     }
+    @media screen and (max-width: 450px) {
+        .team-img {
+            justify-items: center;
+            img {
+                width: auto;
+                max-width: none;
+                height: 100%;
+        }
+        }
+    }
+    
 }
+
+
+
+
