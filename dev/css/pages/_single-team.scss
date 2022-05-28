@@ -1,6 +1,6 @@
 .single-team {
     .header {
-        height: 15vh;
+        height: 25vh;
     }
 
     .article-team {
@@ -149,5 +149,12 @@
                 width: 100px;
                 height: 100px;
             }
+    }
+}
+@media screen and (max-width: 7680px) {
+    .single-team {
+        .header{
+            height: 15vh;
+        }
     }
 }

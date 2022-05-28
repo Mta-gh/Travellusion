@@ -121,7 +121,7 @@
 // Single journey
 .single-journey {
     .header{
-        height: 15vh;
+        height: 25vh;
     }
     
     .section-title {
@@ -268,7 +268,11 @@
         display: flex;
         flex-direction: column;    
     }
-    
+    .single-journey{
+        .header{
+            height: 15vh;
+        }
+    }
     .section-journey-single {
         display: flex;
         flex-direction: column;
