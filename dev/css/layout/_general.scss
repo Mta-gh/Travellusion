@@ -215,7 +215,12 @@ input, textarea {
     
 }
 
+    @media screen and (max-width: 1140px) {
+    .wrapper {
+            width: 90%;
+        }
 
+    } 
 
 // Responsive 
 @media screen and (max-width: 768px) {
@@ -245,9 +250,3 @@ input, textarea {
     }
     
 
-    @media screen and (max-width: 1140px) {
-    .wrapper {
-            width: 90%;
-        }
-
-    } 

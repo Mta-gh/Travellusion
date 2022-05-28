@@ -1,6 +1,9 @@
 .swiper {
     width: 100%;
-    // height: 400px;
+    height: 100%;
+    .swiper-wrapper{
+        width: 100%;
+    }
     .swiper-button-next, .swiper-button-prev {
         color: white;
         text-shadow: 0 0 5px rgba(255, 255, 255, .8);
