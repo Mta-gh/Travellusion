@@ -1,6 +1,6 @@
 .news-single {
     .header {
-        height: 15vh;
+        height: 25vh;
     }
 
     .news-content {
@@ -84,7 +84,10 @@
 
 .archives {
     .header{
-        height: 15vh;
+        height: 35vh;
+        h1{
+            font-size: 2em;
+        }
     }
     .news-content {
         margin: 5vh auto;
@@ -95,6 +98,9 @@
 
 @media screen and (max-width: 768px) {
     .news-single {
+        .header {
+            height: 15vh;
+        }
         .news-article {
             padding: 0 0 50px;
         }
@@ -114,6 +120,12 @@
             width: 100%;
             padding: 0;
 
+        }
+
+    }
+    .archives {
+        .header{
+            height: 15vh;
         }
     }
 }

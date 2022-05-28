@@ -136,6 +136,16 @@
         }
     }
     @media screen and (max-width: 450px) {
+        .article-team {
+            .team-txt {
+                top: 55%;
+
+            h5 {
+                text-align: center;
+                font-size: 1em;
+            }
+        }
+        }
         .team-img {
             justify-items: center;
             img {
