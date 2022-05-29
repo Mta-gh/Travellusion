@@ -135,8 +135,12 @@
         }
         }
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 768px) {
         .article-team {
+            border-radius: 150px 0;
+            &:nth-of-type(2) {
+                border-radius: 0 150px;
+            }
             .team-txt {
                 top: 55%;
 
@@ -145,17 +149,22 @@
                 font-size: 1em;
             }
         }
+
         }
         .team-img {
             justify-items: center;
             img {
-                width: auto;
-                max-width: none;
+                width: 100%;
+        }
+        }
+    }
+    @media screen and (max-width: 520px) {
+        .team-img {
+            img {
                 height: 100%;
         }
         }
     }
-    
 }
 
 

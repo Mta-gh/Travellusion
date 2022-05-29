@@ -36,6 +36,14 @@
             h1 {
                 font-size: 2.5em;
             }
+            h3{
+                font-size: 1.5em;
+            }
+        }
+        @media screen and (max-width: 520px) {
+            h3{
+                font-size: 1.1em;
+            }
         }
     }
 
