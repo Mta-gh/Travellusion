@@ -151,21 +151,18 @@
         }
 
         }
-        .team-img {
-            justify-items: center;
-            img {
-                width: 100%;
-        }
-        }
+
     }
-    @media screen and (max-width: 520px) {
-        .team-img {
-            img {
-                height: 100%;
-        }
-        }
-    }
+@media screen and (max-width: 520px) {
+.team-img {
+    justify-items: center;
+    img {
+        width: auto;
+        height: 100%;
 }
+}}
+}
+
 
 
 

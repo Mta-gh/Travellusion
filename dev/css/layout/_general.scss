@@ -224,12 +224,7 @@ input, textarea {
 
 // Responsive 
 @media screen and (max-width: 768px) {
-    .wrapper {
-        width: 75%;
-        h2 {
-            font-size: 1.5rem;
-        }
-    }
+
     .section-title {
         display: flex;
         flex-direction: column;
