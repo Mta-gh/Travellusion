@@ -91,10 +91,7 @@
     }
     .news-content {
         margin: 5vh auto;
-        .news-article{
-        border-bottom: none;
-        box-shadow: none;
-    }}
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -105,7 +102,10 @@
         .news-article {
             padding: 0 0 50px;
         }
-
+.news-content{
+    max-width: 85%;
+    margin: 0 auto;
+}
         .news-content .img-container {
             max-width: 250px;
             height: 200px;

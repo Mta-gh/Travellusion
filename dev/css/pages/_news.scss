@@ -10,7 +10,7 @@
 // Main content
 .news-content {
     width: 70%;
-    padding: 0 3em;
+
 
     h2 {
         text-align: center;
@@ -18,15 +18,11 @@
 
     .news-article {
         text-align: justify;
-        border-bottom: 1px solid $black-txt;
-        box-shadow: 0 5px 10px -13px rgb(0 0 0 / 80%), inset 0 -5px 10px -12px rgb(0 0 0 / 80%);
-        padding: 3em;
+margin-bottom: 2em;
+
     }
 
-    .news-article:nth-of-type(3) {
-        border-bottom: 0;
-        box-shadow: none;
-    }
+
 
     .img-container-news {
         max-width: 500px;
@@ -167,9 +163,6 @@
 // mobile
 @media screen and (max-width: 768px) {
 
-    .news-content .news-article {
-        padding: 3em 0;
-    }
 
     .news-content .img-container-news {
         max-width: 300px;
