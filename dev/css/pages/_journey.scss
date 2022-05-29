@@ -220,11 +220,10 @@
 .journey-swiper {
     margin: 6rem auto 0;
     width: 100%;
-    height: 100%;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     border-radius: 25px;
     overflow: hidden;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 21 / 9;
     
     img {
         display: block;
@@ -257,6 +256,8 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    
     .journey-description {
         font-size: 0.8rem;
     }
@@ -265,10 +266,6 @@
             font-size: 0.7rem;
         }
     }
-}
-
-@media screen and (max-width: 768px) {
-    
     .section-journeys-blocs {
         display: flex;
         flex-direction: column;    
@@ -307,4 +304,5 @@
     .journey-swiper, .section-journeys-contact {
         margin-top: 45px;
     }
+    
 }
