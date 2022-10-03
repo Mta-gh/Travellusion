@@ -6,14 +6,15 @@ __________________________________________________________________________
 Link to the website :  https://mta-gh.github.io/Travellusion/prod
 & : https://lesliecop.com/travellusion/
 
+### Languages & tools:
+
++ HTML / CSS (SASS) / JS (three.js swiper.js) / PHP
++ Wordpress
++ Design experiments on CodePen  https://codepen.io/Ginsia
+
 ### Gini's branch 🦜 :
 
 + Page Teams + Single Team
 + Page Contact
 + Page 404
 + Genéral : design curseur, couleurs header footer, contenu images astrafeed + teams, contenus teams
- 
-### Languages et outils utilisés:
-
-+ HTML / CSS / JS
-+ Design experiments on CodePen  https://codepen.io/Ginsia
