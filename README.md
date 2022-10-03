@@ -6,7 +6,11 @@ __________________________________________________________________________
 Link to the website :  https://mta-gh.github.io/Travellusion/prod
 & : https://lesliecop.com/travellusion/
 
-### Languages & tools:
+### End of course group project 🦕 : 
+
++ Design -> html/css/js -> Wordpress theming
+
+### Languages & tools ⚙️ :
 
 + HTML / CSS (SASS) / JS (three.js swiper.js) / PHP
 + Wordpress
